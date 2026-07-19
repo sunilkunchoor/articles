@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Knowledge Hub | Sunil Kunchoor Basavaraju",
-  description: "Knowledge Hub and Articles by Sunil Kunchoor Basavaraju",
+  title: "Articles | Sunil Kunchoor Basavaraju",
+  description: "Articles by Sunil Kunchoor Basavaraju",
 };
 
 export default function RootLayout({

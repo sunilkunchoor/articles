@@ -57,7 +57,7 @@ export async function generateStaticParams() {
 
 export default async function ArticlePage({ params }: PageProps) {
   const { slug } = await params;
-  
+
   if (!slug || slug.length === 0) {
     notFound();
   }
@@ -115,7 +115,7 @@ export default async function ArticlePage({ params }: PageProps) {
 
   // Convert markdown to HTML with custom renderer
   const renderer = new marked.Renderer();
-  
+
   // Custom heading renderer to generate IDs for table of contents
   renderer.heading = function (text: string, level: number, raw: string) {
     const id = raw
@@ -148,7 +148,7 @@ export default async function ArticlePage({ params }: PageProps) {
     if (!href) {
       return `<a href="${href}"${title ? ` title="${title}"` : ''}>${displayText}</a>`;
     }
-    
+
     let resolvedHref = href;
     // Check if relative link (not absolute, not an email, not anchor)
     if (!href.startsWith('http://') && !href.startsWith('https://') && !href.startsWith('mailto:') && !href.startsWith('/') && !href.startsWith('#')) {
@@ -159,14 +159,14 @@ export default async function ArticlePage({ params }: PageProps) {
       if (isRemote && remoteFilePath) {
         const dirParts = remoteFilePath.split('/').slice(0, -1);
         const linkParts = pathOnly.split('/');
-        
+
         for (const part of linkParts) {
           if (part === '.' || part === '') continue;
           if (part === '..') dirParts.pop();
           else dirParts.push(part);
         }
         let targetRepoPath = dirParts.join('/');
-        
+
         if (!targetRepoPath.endsWith('.md')) {
           targetRepoPath += targetRepoPath.endsWith('/') ? 'README.md' : '/README.md';
         }
@@ -182,10 +182,10 @@ export default async function ArticlePage({ params }: PageProps) {
           if (strippedPath.endsWith('.md')) strippedPath = strippedPath.slice(0, -3);
           if (strippedPath === 'README' || strippedPath === 'README.md') strippedPath = '';
           else if (strippedPath.endsWith('/README')) strippedPath = strippedPath.slice(0, -7);
-          
+
           let fallbackDirParts = remoteFilePath.split('/').slice(0, -1);
           if (fallbackDirParts[0] === 'docs') fallbackDirParts.shift();
-          
+
           const fallbackResolvedParts = [...fallbackDirParts];
           for (const part of strippedPath.split('/')) {
             if (part === '.' || part === '' || part === 'docs') continue;
@@ -200,10 +200,10 @@ export default async function ArticlePage({ params }: PageProps) {
         if (strippedPath.endsWith('.md')) strippedPath = strippedPath.slice(0, -3);
         if (strippedPath === 'README' || strippedPath === 'README.md') strippedPath = '';
         else if (strippedPath.endsWith('/README')) strippedPath = strippedPath.slice(0, -7);
-        
+
         const baseDirParts = slug.length > 1 ? slug.slice(1, -1) : [];
         const resolvedParts = [...baseDirParts];
-        
+
         for (const part of strippedPath.split('/')) {
           if (part === '.' || part === '') continue;
           if (part === '..') resolvedParts.pop();
@@ -219,14 +219,14 @@ export default async function ArticlePage({ params }: PageProps) {
   // Custom image renderer to rewrite relative images to local public WebP paths
   renderer.image = function (href: string, title: string | null, text: string) {
     if (!href) return '';
-    
+
     let resolvedHref = href;
     if (isRemote && !href.startsWith('http://') && !href.startsWith('https://') && !href.startsWith('data:') && !href.startsWith('/')) {
       const hrefParts = href.split('/');
       const filename = hrefParts[hrefParts.length - 1];
       const dotIdx = filename.lastIndexOf('.');
       const ext = dotIdx !== -1 ? filename.substring(dotIdx).toLowerCase() : '';
-      
+
       let resolvedParts: string[] = [];
       if (filename === 'overview.png') {
         resolvedParts = ['docs', 'assets', 'overview.png'];
@@ -245,17 +245,17 @@ export default async function ArticlePage({ params }: PageProps) {
         const baseName = filename.substring(0, filename.length - ext.length);
         resolvedParts[resolvedParts.length - 1] = `${baseName}.webp`;
       }
-      
+
       resolvedHref = `/${mainSlug}/${resolvedParts.join('/')}`;
     }
-    
+
     return `<img src="${resolvedHref}" alt="${text || ''}"${title ? ` title="${title}"` : ''} />`;
   };
 
   // Custom code block renderer to highlight code with Prism based on language
   renderer.code = function (code: string, infostring: string | undefined, escaped: boolean) {
     const lang = (infostring || '').match(/^\S*/)?.[0] || 'text';
-    
+
     let highlightedCode = code;
     if (Prism.languages[lang]) {
       try {
@@ -270,7 +270,7 @@ export default async function ArticlePage({ params }: PageProps) {
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
     }
-    
+
     return `<pre class="language-${lang}"><code class="language-${lang}">${highlightedCode}</code></pre>\n`;
   };
 
@@ -324,7 +324,7 @@ export default async function ArticlePage({ params }: PageProps) {
         <div className="container mx-auto px-6 max-w-7xl">
           {/* Main Layout Grid */}
           <div className={`grid grid-cols-1 ${hasSidebar ? 'lg:grid-cols-4' : 'max-w-3xl mx-auto'} gap-12`}>
-            
+
             {/* Left Sidebar (Desktop Navigation) */}
             {hasSidebar && (
               <aside className="lg:col-span-1 border-r border-white/5 pr-6 h-fit sticky top-28 hidden lg:block overflow-y-auto max-h-[calc(100vh-200px)] custom-scrollbar">
@@ -341,13 +341,12 @@ export default async function ArticlePage({ params }: PageProps) {
 
                 <nav className="space-y-4">
                   {/* Introduction link */}
-                  <Link 
+                  <Link
                     href={`/${mainSlug}`}
-                    className={`flex items-center space-x-2.5 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${
-                      !isSubPage 
-                        ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]' 
+                    className={`flex items-center space-x-2.5 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${!isSubPage
+                        ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]'
                         : 'text-slate-400 hover:text-white hover:bg-white/5 border border-transparent'
-                    }`}
+                      }`}
                   >
                     <BookOpen className="w-4 h-4" />
                     <span>Introduction</span>
@@ -356,37 +355,36 @@ export default async function ArticlePage({ params }: PageProps) {
                   {/* Chronological order-preserving render map */}
                   {subPages.map((sub: any) => {
                     const subSlugPath = sub.slug.join('/');
-                    
+
                     if (renderedSubPages.has(subSlugPath)) {
                       return null;
                     }
 
                     const isGroup = sub.slug.length === 1 && isGroupParent(sub.slug[0]);
-                    
+
                     if (isGroup) {
                       const groupKey = sub.slug[0];
                       if (renderedGroups.has(groupKey)) {
                         return null;
                       }
                       renderedGroups.add(groupKey);
-                      
+
                       const groupHref = `/${mainSlug}/${groupKey}`;
                       const isGroupActive = isSubPage && slug.slice(1).join('/') === groupKey;
                       const children = getGroupChildren(groupKey);
-                      
+
                       children.forEach((child: any) => {
                         renderedSubPages.add(child.slug.join('/'));
                       });
 
                       return (
                         <div key={groupKey} className="space-y-1.5 pt-2">
-                          <Link 
+                          <Link
                             href={groupHref}
-                            className={`text-[10px] uppercase tracking-wider font-bold block px-3 mb-1.5 transition-colors ${
-                              isGroupActive 
-                                ? 'text-primary shadow-[0_0_10px_rgba(125,249,255,0.05)]' 
+                            className={`text-[10px] uppercase tracking-wider font-bold block px-3 mb-1.5 transition-colors ${isGroupActive
+                                ? 'text-primary shadow-[0_0_10px_rgba(125,249,255,0.05)]'
                                 : 'text-slate-500 hover:text-white'
-                            }`}
+                              }`}
                           >
                             {sub.title}
                           </Link>
@@ -397,14 +395,13 @@ export default async function ArticlePage({ params }: PageProps) {
                               const isChildActive = isSubPage && slug.slice(1).join('/') === childSlugPath;
 
                               return (
-                                <Link 
+                                <Link
                                   key={childSlugPath}
                                   href={childHref}
-                                  className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-[13px] font-medium transition-all ${
-                                    isChildActive 
-                                      ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]' 
+                                  className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-[13px] font-medium transition-all ${isChildActive
+                                      ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]'
                                       : 'text-slate-400 hover:text-white hover:bg-white/5 border border-transparent'
-                                  }`}
+                                    }`}
                                 >
                                   <ChevronRight className="w-3 h-3 flex-shrink-0 text-slate-600" />
                                   <span className="line-clamp-1">{child.title}</span>
@@ -420,12 +417,12 @@ export default async function ArticlePage({ params }: PageProps) {
                       const groupKey = sub.slug[0];
                       if (!renderedGroups.has(groupKey)) {
                         renderedGroups.add(groupKey);
-                        
+
                         const children = getGroupChildren(groupKey);
                         children.forEach((child: any) => {
                           renderedSubPages.add(child.slug.join('/'));
                         });
-                        
+
                         const groupHref = `/${mainSlug}/${groupKey}`;
                         const groupFilePath = path.join(process.cwd(), 'content/articles', mainSlug, `${groupKey}.md`);
                         const hasGroupFile = fs.existsSync(groupFilePath);
@@ -435,13 +432,12 @@ export default async function ArticlePage({ params }: PageProps) {
                         return (
                           <div key={groupKey} className="space-y-1.5 pt-2">
                             {hasGroupFile ? (
-                              <Link 
+                              <Link
                                 href={groupHref}
-                                className={`text-[10px] uppercase tracking-wider font-bold block px-3 mb-1.5 transition-colors ${
-                                  isGroupActive 
-                                    ? 'text-primary shadow-[0_0_10px_rgba(125,249,255,0.05)]' 
+                                className={`text-[10px] uppercase tracking-wider font-bold block px-3 mb-1.5 transition-colors ${isGroupActive
+                                    ? 'text-primary shadow-[0_0_10px_rgba(125,249,255,0.05)]'
                                     : 'text-slate-500 hover:text-white'
-                                }`}
+                                  }`}
                               >
                                 {groupTitle}
                               </Link>
@@ -457,14 +453,13 @@ export default async function ArticlePage({ params }: PageProps) {
                                 const isChildActive = isSubPage && slug.slice(1).join('/') === childSlugPath;
 
                                 return (
-                                  <Link 
+                                  <Link
                                     key={childSlugPath}
                                     href={childHref}
-                                    className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-[13px] font-medium transition-all ${
-                                      isChildActive 
-                                        ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]' 
+                                    className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-[13px] font-medium transition-all ${isChildActive
+                                        ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]'
                                         : 'text-slate-400 hover:text-white hover:bg-white/5 border border-transparent'
-                                    }`}
+                                      }`}
                                   >
                                     <ChevronRight className="w-3 h-3 flex-shrink-0 text-slate-600" />
                                     <span className="line-clamp-1">{child.title}</span>
@@ -484,14 +479,13 @@ export default async function ArticlePage({ params }: PageProps) {
                     renderedSubPages.add(subSlugPath);
 
                     return (
-                      <Link 
+                      <Link
                         key={subSlugPath}
                         href={subHref}
-                        className={`flex items-center space-x-2.5 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${
-                          isActive 
-                            ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]' 
+                        className={`flex items-center space-x-2.5 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${isActive
+                            ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]'
                             : 'text-slate-400 hover:text-white hover:bg-white/5 border border-transparent'
-                        }`}
+                          }`}
                       >
                         <ChevronRight className="w-3.5 h-3.5 flex-shrink-0" />
                         <span className="line-clamp-1">{sub.title}</span>
@@ -506,17 +500,17 @@ export default async function ArticlePage({ params }: PageProps) {
             <div className={`${hasSidebar ? 'lg:col-span-3 max-w-4xl' : 'w-full'}`}>
               {/* Back to Blog Listing */}
               <div className="flex items-center space-x-4 mb-8">
-                <Link 
+                <Link
                   href="/"
                   className="inline-flex items-center text-sm font-semibold text-slate-400 hover:text-white transition-colors group"
                 >
                   <ArrowLeft className="w-4 h-4 mr-2 transform group-hover:-translate-x-1 transition-transform" />
-                  Knowledge Hub
+                  Back to Articles
                 </Link>
                 {isSubPage && (
                   <>
                     <span className="text-slate-600">/</span>
-                    <Link 
+                    <Link
                       href={`/${mainSlug}`}
                       className="text-sm font-semibold text-slate-400 hover:text-white transition-colors"
                     >
@@ -533,13 +527,12 @@ export default async function ArticlePage({ params }: PageProps) {
                     Sections
                   </span>
                   <div className="flex flex-wrap gap-2">
-                    <Link 
+                    <Link
                       href={`/${mainSlug}`}
-                      className={`text-xs px-3 py-1.5 rounded-lg border transition-all ${
-                        !isSubPage 
-                          ? 'bg-primary/10 text-primary border-primary/20' 
+                      className={`text-xs px-3 py-1.5 rounded-lg border transition-all ${!isSubPage
+                          ? 'bg-primary/10 text-primary border-primary/20'
                           : 'bg-white/5 border-transparent text-slate-400'
-                      }`}
+                        }`}
                     >
                       Introduction
                     </Link>
@@ -547,14 +540,13 @@ export default async function ArticlePage({ params }: PageProps) {
                       const subSlugPath = sub.slug.join('/');
                       const isActive = isSubPage && slug.slice(1).join('/') === subSlugPath;
                       return (
-                        <Link 
+                        <Link
                           key={subSlugPath}
                           href={`/${mainSlug}/${subSlugPath}`}
-                          className={`text-xs px-3 py-1.5 rounded-lg border transition-all ${
-                            isActive 
-                              ? 'bg-primary/10 text-primary border-primary/20' 
+                          className={`text-xs px-3 py-1.5 rounded-lg border transition-all ${isActive
+                              ? 'bg-primary/10 text-primary border-primary/20'
                               : 'bg-white/5 border-transparent text-slate-400'
-                          }`}
+                            }`}
                         >
                           {sub.title}
                         </Link>
@@ -569,7 +561,7 @@ export default async function ArticlePage({ params }: PageProps) {
                 <h1 className="font-headline font-bold text-3xl md:text-5xl text-white mb-6 leading-tight">
                   {data.title || slug[slug.length - 1]}
                 </h1>
-                
+
                 <div className="flex flex-wrap items-center gap-6 text-sm text-slate-400">
                   {data.date && (
                     <span className="flex items-center gap-1.5">
@@ -596,7 +588,7 @@ export default async function ArticlePage({ params }: PageProps) {
                 {data.tags && (
                   <div className="flex flex-wrap gap-2 mt-6">
                     {data.tags.map((tag: string) => (
-                      <span 
+                      <span
                         key={tag}
                         className="text-[10px] uppercase tracking-wider font-semibold px-2.5 py-1 bg-white/5 text-slate-300 rounded-full border border-white/5"
                       >
@@ -608,7 +600,7 @@ export default async function ArticlePage({ params }: PageProps) {
               </header>
 
               {/* Article Content */}
-              <div 
+              <div
                 className="prose-custom"
                 dangerouslySetInnerHTML={{ __html: htmlContent }}
               />
