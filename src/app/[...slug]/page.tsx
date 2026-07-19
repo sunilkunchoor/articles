@@ -365,6 +365,9 @@ export default async function ArticlePage({ params }: PageProps) {
                     
                     if (isGroup) {
                       const groupKey = sub.slug[0];
+                      if (renderedGroups.has(groupKey)) {
+                        return null;
+                      }
                       renderedGroups.add(groupKey);
                       
                       const groupHref = `/${mainSlug}/${groupKey}`;
@@ -504,11 +507,11 @@ export default async function ArticlePage({ params }: PageProps) {
               {/* Back to Blog Listing */}
               <div className="flex items-center space-x-4 mb-8">
                 <Link 
-                  href="/articles"
+                  href="/"
                   className="inline-flex items-center text-sm font-semibold text-slate-400 hover:text-white transition-colors group"
                 >
                   <ArrowLeft className="w-4 h-4 mr-2 transform group-hover:-translate-x-1 transition-transform" />
-                  Back to Articles
+                  Knowledge Hub
                 </Link>
                 {isSubPage && (
                   <>

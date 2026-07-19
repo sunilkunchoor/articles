@@ -15,12 +15,12 @@ interface ArticleMeta {
 
 export default async function ArticlesPage() {
   const articlesDir = path.join(process.cwd(), 'content/articles');
-  
+
   let articles: ArticleMeta[] = [];
   if (fs.existsSync(articlesDir)) {
     const files = fs.readdirSync(articlesDir);
     const jsonFiles = files.filter(file => file.endsWith('.json'));
-    
+
     articles = jsonFiles
       .map((file) => {
         const filePath = path.join(articlesDir, file);
@@ -40,7 +40,7 @@ export default async function ArticlesPage() {
     <main className="relative min-h-screen">
       <Background />
       <Navbar />
-      
+
       <div className="relative z-10 pt-32 pb-24">
         <div className="container mx-auto px-6 max-w-5xl">
           {/* Header */}
@@ -49,7 +49,7 @@ export default async function ArticlesPage() {
               Technical <span className="text-primary">Articles</span> & Insights
             </h1>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-              Deep dives into MLOps infrastructure, automatic QA systems, and model governance engineering.
+              A curated collection of technical articles, deep dives, project documentation, and learning resources.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export default async function ArticlesPage() {
           <SearchableArticles initialArticles={articles} />
         </div>
       </div>
-      
+
       <Footer />
     </main>
   );
