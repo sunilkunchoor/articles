@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 214 32% 91%;
+    --card: 222 47% 12%;
+    --card-foreground: 214 32% 91%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 214 32% 91%;
+    --primary: 182 100% 75%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 277 100% 50%;
+    --secondary-foreground: 214 32% 91%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 182 100% 75%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 182 100% 75%;
+    --chart-1: 182 100% 75%;
+    --chart-2: 277 100% 50%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground selection:bg-primary/30;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline tracking-tight;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-2xl;
+  }
+  
+  .glass-nav {
+    @apply bg-slate-900/60 backdrop-blur-xl border-b border-white/10;
+  }
+
+  .text-gradient-blue {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#7DF9FF] to-[#9D00FF];
+  }
+
+  .btn-primary {
+    @apply bg-[#7DF9FF] text-slate-900 font-bold px-6 py-3 rounded-lg hover:brightness-110 transition-all shadow-[0_0_20px_rgba(125,249,255,0.3)];
+  }
+
+  .btn-secondary {
+    @apply border border-white/20 text-white font-bold px-6 py-3 rounded-lg hover:bg-white/10 transition-all backdrop-blur-sm;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom Markdown Typography */
+.prose-custom {
+  @apply text-slate-300 leading-relaxed text-base;
+}
+.prose-custom p {
+  @apply mb-6;
+}
+.prose-custom h1 {
+  @apply text-3xl font-bold text-white mt-12 mb-6 font-headline tracking-tight;
+}
+.prose-custom h2 {
+  @apply text-2xl font-bold text-white mt-10 mb-4 border-b border-white/5 pb-2 font-headline tracking-tight;
+}
+.prose-custom h3 {
+  @apply text-xl font-bold text-white mt-8 mb-3 font-headline tracking-tight;
+}
+.prose-custom ul {
+  @apply list-disc list-inside mb-6 pl-4 space-y-2;
+}
+.prose-custom ol {
+  @apply list-decimal list-inside mb-6 pl-4 space-y-2;
+}
+.prose-custom li {
+  @apply text-slate-300;
+}
+.prose-custom blockquote {
+  @apply border-l-4 border-primary bg-white/5 px-6 py-4 rounded-r-lg italic my-6 text-slate-300;
+}
+.prose-custom code {
+  @apply bg-white/10 text-primary px-1.5 py-0.5 rounded text-sm font-mono font-medium;
+}
+.prose-custom pre {
+  @apply bg-slate-950 border border-white/10 p-5 rounded-xl my-6 overflow-x-auto;
+}
+.prose-custom pre code {
+  @apply bg-transparent text-slate-300 p-0 rounded-none text-xs font-mono leading-relaxed block;
+}
+.prose-custom table {
+  @apply w-full border-collapse my-6 text-sm text-left;
+}
+.prose-custom th {
+  @apply border-b border-white/10 py-3 font-bold text-white;
+}
+.prose-custom td {
+  @apply border-b border-white/5 py-3 text-slate-400;
+}
+.prose-custom a {
+  @apply text-primary hover:text-primary/80 underline underline-offset-4 transition-colors;
+}
+.prose-custom hr {
+  @apply border-t border-white/10 my-10;
+}
+.prose-custom blockquote {
+  font-style: normal;
+  border-left: 3px solid #7df9ff;
+  background-color: rgba(125, 249, 255, 0.03);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #cbd5e1;
+}
+.prose-custom blockquote p {
+  margin: 0 !important;
+  line-height: 1.6;
+}
+.prose-custom blockquote p::before,
+.prose-custom blockquote p::after {
+  content: "" !important;
+}
+
+/* Premium developer terminal styling for code blocks and ASCII drawings */
+.prose-custom pre {
+  position: relative;
+  padding: 3.5rem 1.25rem 1.25rem 1.25rem !important; /* Top padding leaves space for title bar */
+  background-color: rgba(15, 23, 42, 0.6) !important; /* Translucent slate background */
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px -15px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  font-family: 'Fira Code', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  font-size: 0.85rem !important;
+  line-height: 1.6;
+  color: #e2e8f0 !important;
+  overflow-x: auto;
+  margin: 2.5rem 0;
+}
+
+/* Terminal header bar */
+.prose-custom pre::before {
+  content: "" !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2.2rem;
+  background-color: rgba(30, 41, 59, 0.45);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  display: block;
+}
+
+/* Red, yellow, and green window control dots */
+.prose-custom pre::after {
+  content: "" !important;
+  position: absolute;
+  top: 0.75rem;
+  left: 1.25rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ef4444;
+  box-shadow: 14px 0 0 #f59e0b, 28px 0 0 #10b981;
+  opacity: 0.8;
+  display: block;
+}
+.prose-custom img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Standalone diagram container card & Mermaid diagram card */
+.prose-custom p:has(> img:only-child),
+.mermaid-container {
+  display: block;
+  margin: 2.5rem auto;
+  border-radius: 12px;
+  background-color: rgba(15, 23, 42, 0.6); /* Glassmorphic dark slate */
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 15px 40px -15px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+}
+
+.prose-custom p:has(> img:only-child):hover,
+.mermaid-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px -10px rgba(125, 249, 255, 0.2);
+  border-color: rgba(125, 249, 255, 0.3);
+}
+
+/* Standalone diagram image inside container - blended with dark card background */
+.prose-custom p:has(> img:only-child) > img {
+  display: block !important;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  /* Invert white background to black (transparent) & black text to white, preserving original hues */
+  filter: invert(1) hue-rotate(180deg);
+  mix-blend-mode: screen;
+}
+
+/* Custom Scrollbar for Articles Sidebar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.05) transparent;
+  transition: scrollbar-color 0.3s ease;
+}
+
+.custom-scrollbar:hover {
+  scrollbar-color: rgba(125, 249, 255, 0.2) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 9999px;
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: rgba(125, 249, 255, 0.15);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(125, 249, 255, 0.5) !important;
+}
+

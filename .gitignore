@@ -1,0 +1,65 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+
+# Dynamically synced articles
+content/articles/edge-compliance.md
+content/articles/skywalker-qa.md
+content/articles/pgp-ai-ml.md
+content/articles/pgp-ai-ml/
+content/articles/airflow-custom-sdk.md
+content/articles/airflow-custom-sdk/
+content/articles/logferry.md
+content/articles/logferry/
+content/articles/pytorch-101/
+content/articles/pytorch-101.md
+content/articles/ai-system-architecture/
+content/articles/ai-system-architecture.md
+content/articles/c4-model/
+content/articles/c4-model.md
+content/articles/apache-spark.md
+content/articles/apache-spark/
+content/articles/system-design/
+content/articles/system-design.md
+
+# Dynamically downloaded article images
+/public/articles/

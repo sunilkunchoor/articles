@@ -1,0 +1,924 @@
+{
+  "type": "remote",
+  "slug": "system-design",
+  "owner": "sunilkunchoor",
+  "repo": "system-design",
+  "branch": "main",
+  "title": "System Design Concepts",
+  "date": "2026-05-15",
+  "summary": "A comprehensive guide on system design covering fundamentals, architecture, storage, networking, and scalability.",
+  "tags": [
+    "System Design",
+    "Architecture",
+    "Scalability"
+  ],
+  "author": "Sunil Kunchoor Basavaraju",
+  "mainPath": "docs/README.md",
+  "subPages": [
+    {
+      "title": "Requirements & Problem Analysis",
+      "path": "docs/01-requirements-and-problem-analysis/README.md",
+      "slug": [
+        "01-requirements-and-problem-analysis"
+      ]
+    },
+    {
+      "title": "Constraints & Assumptions",
+      "path": "docs/01-requirements-and-problem-analysis/constraints-and-assumptions.md",
+      "slug": [
+        "01-requirements-and-problem-analysis",
+        "constraints-and-assumptions"
+      ]
+    },
+    {
+      "title": "Estimation Techniques",
+      "path": "docs/01-requirements-and-problem-analysis/estimation-techniques.md",
+      "slug": [
+        "01-requirements-and-problem-analysis",
+        "estimation-techniques"
+      ]
+    },
+    {
+      "title": "Functional vs Non-Functional Requirements",
+      "path": "docs/01-requirements-and-problem-analysis/functional-vs-non-functional.md",
+      "slug": [
+        "01-requirements-and-problem-analysis",
+        "functional-vs-non-functional"
+      ]
+    },
+    {
+      "title": "MoSCoW Prioritization",
+      "path": "docs/01-requirements-and-problem-analysis/moscow-prioritization.md",
+      "slug": [
+        "01-requirements-and-problem-analysis",
+        "moscow-prioritization"
+      ]
+    },
+    {
+      "title": "System Design Fundamentals",
+      "path": "docs/02-system-design-fundamentals/README.md",
+      "slug": [
+        "02-system-design-fundamentals"
+      ]
+    },
+    {
+      "title": "Architecture Diagram",
+      "path": "docs/02-system-design-fundamentals/architecture-diagram.md",
+      "slug": [
+        "02-system-design-fundamentals",
+        "architecture-diagram"
+      ]
+    },
+    {
+      "title": "Class Diagram",
+      "path": "docs/02-system-design-fundamentals/class-diagram.md",
+      "slug": [
+        "02-system-design-fundamentals",
+        "class-diagram"
+      ]
+    },
+    {
+      "title": "Component Diagram",
+      "path": "docs/02-system-design-fundamentals/component-diagram.md",
+      "slug": [
+        "02-system-design-fundamentals",
+        "component-diagram"
+      ]
+    },
+    {
+      "title": "Data Flow Diagram (DFD)",
+      "path": "docs/02-system-design-fundamentals/data-flow-diagram.md",
+      "slug": [
+        "02-system-design-fundamentals",
+        "data-flow-diagram"
+      ]
+    },
+    {
+      "title": "ER Diagram (Entity-Relationship Diagram)",
+      "path": "docs/02-system-design-fundamentals/er-diagram.md",
+      "slug": [
+        "02-system-design-fundamentals",
+        "er-diagram"
+      ]
+    },
+    {
+      "title": "High Level Design (HLD)",
+      "path": "docs/02-system-design-fundamentals/high-level-design.md",
+      "slug": [
+        "02-system-design-fundamentals",
+        "high-level-design"
+      ]
+    },
+    {
+      "title": "Low Level Design (LLD)",
+      "path": "docs/02-system-design-fundamentals/low-level-design.md",
+      "slug": [
+        "02-system-design-fundamentals",
+        "low-level-design"
+      ]
+    },
+    {
+      "title": "Sequence Diagram",
+      "path": "docs/02-system-design-fundamentals/sequence-diagram.md",
+      "slug": [
+        "02-system-design-fundamentals",
+        "sequence-diagram"
+      ]
+    },
+    {
+      "title": "State Diagram",
+      "path": "docs/02-system-design-fundamentals/state-diagram.md",
+      "slug": [
+        "02-system-design-fundamentals",
+        "state-diagram"
+      ]
+    },
+    {
+      "title": "Use Case Diagram",
+      "path": "docs/02-system-design-fundamentals/use-case-diagram.md",
+      "slug": [
+        "02-system-design-fundamentals",
+        "use-case-diagram"
+      ]
+    },
+    {
+      "title": "Data Storage",
+      "path": "docs/03-data-storage/README.md",
+      "slug": [
+        "03-data-storage"
+      ]
+    },
+    {
+      "title": "Document Stores",
+      "path": "docs/03-data-storage/document-stores.md",
+      "slug": [
+        "03-data-storage",
+        "document-stores"
+      ]
+    },
+    {
+      "title": "File Storage",
+      "path": "docs/03-data-storage/file-storage.md",
+      "slug": [
+        "03-data-storage",
+        "file-storage"
+      ]
+    },
+    {
+      "title": "Graph Databases",
+      "path": "docs/03-data-storage/graph-databases.md",
+      "slug": [
+        "03-data-storage",
+        "graph-databases"
+      ]
+    },
+    {
+      "title": "In-Memory Databases",
+      "path": "docs/03-data-storage/in-memory-databases.md",
+      "slug": [
+        "03-data-storage",
+        "in-memory-databases"
+      ]
+    },
+    {
+      "title": "Key-Value Stores",
+      "path": "docs/03-data-storage/key-value-stores.md",
+      "slug": [
+        "03-data-storage",
+        "key-value-stores"
+      ]
+    },
+    {
+      "title": "NewSQL",
+      "path": "docs/03-data-storage/newsql.md",
+      "slug": [
+        "03-data-storage",
+        "newsql"
+      ]
+    },
+    {
+      "title": "NoSQL Databases",
+      "path": "docs/03-data-storage/nosql-databases.md",
+      "slug": [
+        "03-data-storage",
+        "nosql-databases"
+      ]
+    },
+    {
+      "title": "Object Storage",
+      "path": "docs/03-data-storage/object-storage.md",
+      "slug": [
+        "03-data-storage",
+        "object-storage"
+      ]
+    },
+    {
+      "title": "SQL Databases (RDBMS)",
+      "path": "docs/03-data-storage/sql-databases.md",
+      "slug": [
+        "03-data-storage",
+        "sql-databases"
+      ]
+    },
+    {
+      "title": "Time-Series Databases",
+      "path": "docs/03-data-storage/time-series-databases.md",
+      "slug": [
+        "03-data-storage",
+        "time-series-databases"
+      ]
+    },
+    {
+      "title": "Wide-Column Stores",
+      "path": "docs/03-data-storage/wide-column-stores.md",
+      "slug": [
+        "03-data-storage",
+        "wide-column-stores"
+      ]
+    },
+    {
+      "title": "Database Concepts",
+      "path": "docs/04-database-concepts/README.md",
+      "slug": [
+        "04-database-concepts"
+      ]
+    },
+    {
+      "title": "ACID Properties",
+      "path": "docs/04-database-concepts/acid-properties.md",
+      "slug": [
+        "04-database-concepts",
+        "acid-properties"
+      ]
+    },
+    {
+      "title": "CAP Theorem",
+      "path": "docs/04-database-concepts/cap-theorem.md",
+      "slug": [
+        "04-database-concepts",
+        "cap-theorem"
+      ]
+    },
+    {
+      "title": "Consistency Models",
+      "path": "docs/04-database-concepts/consistency-models.md",
+      "slug": [
+        "04-database-concepts",
+        "consistency-models"
+      ]
+    },
+    {
+      "title": "Indexing",
+      "path": "docs/04-database-concepts/indexing.md",
+      "slug": [
+        "04-database-concepts",
+        "indexing"
+      ]
+    },
+    {
+      "title": "Normalization & Denormalization",
+      "path": "docs/04-database-concepts/normalization-and-denormalization.md",
+      "slug": [
+        "04-database-concepts",
+        "normalization-and-denormalization"
+      ]
+    },
+    {
+      "title": "Replication",
+      "path": "docs/04-database-concepts/replication.md",
+      "slug": [
+        "04-database-concepts",
+        "replication"
+      ]
+    },
+    {
+      "title": "Sharding & Partitioning",
+      "path": "docs/04-database-concepts/sharding-and-partitioning.md",
+      "slug": [
+        "04-database-concepts",
+        "sharding-and-partitioning"
+      ]
+    },
+    {
+      "title": "Transactions & Isolation Levels",
+      "path": "docs/04-database-concepts/transactions-and-isolation-levels.md",
+      "slug": [
+        "04-database-concepts",
+        "transactions-and-isolation-levels"
+      ]
+    },
+    {
+      "title": "Scalability",
+      "path": "docs/05-scalability/README.md",
+      "slug": [
+        "05-scalability"
+      ]
+    },
+    {
+      "title": "Auto-Scaling & Elasticity",
+      "path": "docs/05-scalability/auto-scaling-and-elasticity.md",
+      "slug": [
+        "05-scalability",
+        "auto-scaling-and-elasticity"
+      ]
+    },
+    {
+      "title": "Consensus & Leader Election",
+      "path": "docs/05-scalability/consensus-and-leader-election.md",
+      "slug": [
+        "05-scalability",
+        "consensus-and-leader-election"
+      ]
+    },
+    {
+      "title": "Load Balancing",
+      "path": "docs/05-scalability/load-balancing.md",
+      "slug": [
+        "05-scalability",
+        "load-balancing"
+      ]
+    },
+    {
+      "title": "Replication & Read Replicas",
+      "path": "docs/05-scalability/replication-and-read-replicas.md",
+      "slug": [
+        "05-scalability",
+        "replication-and-read-replicas"
+      ]
+    },
+    {
+      "title": "Sharding & Partitioning",
+      "path": "docs/05-scalability/sharding-and-partitioning.md",
+      "slug": [
+        "05-scalability",
+        "sharding-and-partitioning"
+      ]
+    },
+    {
+      "title": "Vertical vs Horizontal Scaling",
+      "path": "docs/05-scalability/vertical-vs-horizontal-scaling.md",
+      "slug": [
+        "05-scalability",
+        "vertical-vs-horizontal-scaling"
+      ]
+    },
+    {
+      "title": "Availability & Reliability",
+      "path": "docs/06-availability-and-reliability/README.md",
+      "slug": [
+        "06-availability-and-reliability"
+      ]
+    },
+    {
+      "title": "Backup & Data Durability",
+      "path": "docs/06-availability-and-reliability/backup-and-data-durability.md",
+      "slug": [
+        "06-availability-and-reliability",
+        "backup-and-data-durability"
+      ]
+    },
+    {
+      "title": "Circuit Breaker",
+      "path": "docs/06-availability-and-reliability/circuit-breaker.md",
+      "slug": [
+        "06-availability-and-reliability",
+        "circuit-breaker"
+      ]
+    },
+    {
+      "title": "Data Consistency",
+      "path": "docs/06-availability-and-reliability/data-consistency.md",
+      "slug": [
+        "06-availability-and-reliability",
+        "data-consistency"
+      ]
+    },
+    {
+      "title": "Disaster Recovery",
+      "path": "docs/06-availability-and-reliability/disaster-recovery.md",
+      "slug": [
+        "06-availability-and-reliability",
+        "disaster-recovery"
+      ]
+    },
+    {
+      "title": "Fault Tolerance & Failover",
+      "path": "docs/06-availability-and-reliability/fault-tolerance-and-failover.md",
+      "slug": [
+        "06-availability-and-reliability",
+        "fault-tolerance-and-failover"
+      ]
+    },
+    {
+      "title": "Graceful Degradation",
+      "path": "docs/06-availability-and-reliability/graceful-degradation.md",
+      "slug": [
+        "06-availability-and-reliability",
+        "graceful-degradation"
+      ]
+    },
+    {
+      "title": "High Availability",
+      "path": "docs/06-availability-and-reliability/high-availability.md",
+      "slug": [
+        "06-availability-and-reliability",
+        "high-availability"
+      ]
+    },
+    {
+      "title": "Networking",
+      "path": "docs/07-networking/README.md",
+      "slug": [
+        "07-networking"
+      ]
+    },
+    {
+      "title": "CDN",
+      "path": "docs/07-networking/cdn.md",
+      "slug": [
+        "07-networking",
+        "cdn"
+      ]
+    },
+    {
+      "title": "DNS",
+      "path": "docs/07-networking/dns.md",
+      "slug": [
+        "07-networking",
+        "dns"
+      ]
+    },
+    {
+      "title": "Firewalls & VPN",
+      "path": "docs/07-networking/firewalls-and-vpn.md",
+      "slug": [
+        "07-networking",
+        "firewalls-and-vpn"
+      ]
+    },
+    {
+      "title": "HTTP & HTTPS",
+      "path": "docs/07-networking/http-and-https.md",
+      "slug": [
+        "07-networking",
+        "http-and-https"
+      ]
+    },
+    {
+      "title": "Load Balancer & Reverse Proxy",
+      "path": "docs/07-networking/load-balancer-and-reverse-proxy.md",
+      "slug": [
+        "07-networking",
+        "load-balancer-and-reverse-proxy"
+      ]
+    },
+    {
+      "title": "TCP/IP & UDP",
+      "path": "docs/07-networking/tcp-ip-and-udp.md",
+      "slug": [
+        "07-networking",
+        "tcp-ip-and-udp"
+      ]
+    },
+    {
+      "title": "WebSockets",
+      "path": "docs/07-networking/websockets.md",
+      "slug": [
+        "07-networking",
+        "websockets"
+      ]
+    },
+    {
+      "title": "Caching",
+      "path": "docs/08-caching/README.md",
+      "slug": [
+        "08-caching"
+      ]
+    },
+    {
+      "title": "Cache Invalidation",
+      "path": "docs/08-caching/cache-invalidation.md",
+      "slug": [
+        "08-caching",
+        "cache-invalidation"
+      ]
+    },
+    {
+      "title": "Cache Read/Write Patterns",
+      "path": "docs/08-caching/cache-read-write-patterns.md",
+      "slug": [
+        "08-caching",
+        "cache-read-write-patterns"
+      ]
+    },
+    {
+      "title": "Caching Layers",
+      "path": "docs/08-caching/caching-layers.md",
+      "slug": [
+        "08-caching",
+        "caching-layers"
+      ]
+    },
+    {
+      "title": "Eviction Policies",
+      "path": "docs/08-caching/eviction-policies.md",
+      "slug": [
+        "08-caching",
+        "eviction-policies"
+      ]
+    },
+    {
+      "title": "Redis vs Memcached",
+      "path": "docs/08-caching/redis-vs-memcached.md",
+      "slug": [
+        "08-caching",
+        "redis-vs-memcached"
+      ]
+    },
+    {
+      "title": "Messaging & Communication",
+      "path": "docs/09-messaging-and-communication/README.md",
+      "slug": [
+        "09-messaging-and-communication"
+      ]
+    },
+    {
+      "title": "Dead-Letter Queue",
+      "path": "docs/09-messaging-and-communication/dead-letter-queue.md",
+      "slug": [
+        "09-messaging-and-communication",
+        "dead-letter-queue"
+      ]
+    },
+    {
+      "title": "Idempotency",
+      "path": "docs/09-messaging-and-communication/idempotency.md",
+      "slug": [
+        "09-messaging-and-communication",
+        "idempotency"
+      ]
+    },
+    {
+      "title": "Kafka vs RabbitMQ vs SQS",
+      "path": "docs/09-messaging-and-communication/kafka-vs-rabbitmq-vs-sqs.md",
+      "slug": [
+        "09-messaging-and-communication",
+        "kafka-vs-rabbitmq-vs-sqs"
+      ]
+    },
+    {
+      "title": "Message Queues",
+      "path": "docs/09-messaging-and-communication/message-queues.md",
+      "slug": [
+        "09-messaging-and-communication",
+        "message-queues"
+      ]
+    },
+    {
+      "title": "Pub/Sub",
+      "path": "docs/09-messaging-and-communication/pub-sub.md",
+      "slug": [
+        "09-messaging-and-communication",
+        "pub-sub"
+      ]
+    },
+    {
+      "title": "Compute & Services",
+      "path": "docs/10-compute-and-services/README.md",
+      "slug": [
+        "10-compute-and-services"
+      ]
+    },
+    {
+      "title": "API Gateway",
+      "path": "docs/10-compute-and-services/api-gateway.md",
+      "slug": [
+        "10-compute-and-services",
+        "api-gateway"
+      ]
+    },
+    {
+      "title": "Containers & Orchestration",
+      "path": "docs/10-compute-and-services/containers-and-orchestration.md",
+      "slug": [
+        "10-compute-and-services",
+        "containers-and-orchestration"
+      ]
+    },
+    {
+      "title": "Monolith vs Microservices",
+      "path": "docs/10-compute-and-services/monolith-vs-microservices.md",
+      "slug": [
+        "10-compute-and-services",
+        "monolith-vs-microservices"
+      ]
+    },
+    {
+      "title": "Serverless",
+      "path": "docs/10-compute-and-services/serverless.md",
+      "slug": [
+        "10-compute-and-services",
+        "serverless"
+      ]
+    },
+    {
+      "title": "Service Discovery",
+      "path": "docs/10-compute-and-services/service-discovery.md",
+      "slug": [
+        "10-compute-and-services",
+        "service-discovery"
+      ]
+    },
+    {
+      "title": "Service Mesh",
+      "path": "docs/10-compute-and-services/service-mesh.md",
+      "slug": [
+        "10-compute-and-services",
+        "service-mesh"
+      ]
+    },
+    {
+      "title": "Web Server & App Server",
+      "path": "docs/10-compute-and-services/web-server-and-app-server.md",
+      "slug": [
+        "10-compute-and-services",
+        "web-server-and-app-server"
+      ]
+    },
+    {
+      "title": "API Design",
+      "path": "docs/11-api-design/README.md",
+      "slug": [
+        "11-api-design"
+      ]
+    },
+    {
+      "title": "API Versioning & Idempotency",
+      "path": "docs/11-api-design/api-versioning-and-idempotency.md",
+      "slug": [
+        "11-api-design",
+        "api-versioning-and-idempotency"
+      ]
+    },
+    {
+      "title": "Authentication & Authorization",
+      "path": "docs/11-api-design/authentication-and-authorization.md",
+      "slug": [
+        "11-api-design",
+        "authentication-and-authorization"
+      ]
+    },
+    {
+      "title": "GraphQL",
+      "path": "docs/11-api-design/graphql.md",
+      "slug": [
+        "11-api-design",
+        "graphql"
+      ]
+    },
+    {
+      "title": "gRPC",
+      "path": "docs/11-api-design/grpc.md",
+      "slug": [
+        "11-api-design",
+        "grpc"
+      ]
+    },
+    {
+      "title": "Pagination",
+      "path": "docs/11-api-design/pagination.md",
+      "slug": [
+        "11-api-design",
+        "pagination"
+      ]
+    },
+    {
+      "title": "Rate Limiting & Throttling",
+      "path": "docs/11-api-design/rate-limiting-and-throttling.md",
+      "slug": [
+        "11-api-design",
+        "rate-limiting-and-throttling"
+      ]
+    },
+    {
+      "title": "REST",
+      "path": "docs/11-api-design/rest.md",
+      "slug": [
+        "11-api-design",
+        "rest"
+      ]
+    },
+    {
+      "title": "Security",
+      "path": "docs/12-security/README.md",
+      "slug": [
+        "12-security"
+      ]
+    },
+    {
+      "title": "Authentication & Authorization",
+      "path": "docs/12-security/authentication-and-authorization.md",
+      "slug": [
+        "12-security",
+        "authentication-and-authorization"
+      ]
+    },
+    {
+      "title": "Data Privacy",
+      "path": "docs/12-security/data-privacy.md",
+      "slug": [
+        "12-security",
+        "data-privacy"
+      ]
+    },
+    {
+      "title": "Encryption",
+      "path": "docs/12-security/encryption.md",
+      "slug": [
+        "12-security",
+        "encryption"
+      ]
+    },
+    {
+      "title": "Input Validation & Injection",
+      "path": "docs/12-security/input-validation-and-injection.md",
+      "slug": [
+        "12-security",
+        "input-validation-and-injection"
+      ]
+    },
+    {
+      "title": "OAuth2 & JWT",
+      "path": "docs/12-security/oauth2-and-jwt.md",
+      "slug": [
+        "12-security",
+        "oauth2-and-jwt"
+      ]
+    },
+    {
+      "title": "Secrets Management",
+      "path": "docs/12-security/secrets-management.md",
+      "slug": [
+        "12-security",
+        "secrets-management"
+      ]
+    },
+    {
+      "title": "XSS & CSRF",
+      "path": "docs/12-security/xss-and-csrf.md",
+      "slug": [
+        "12-security",
+        "xss-and-csrf"
+      ]
+    },
+    {
+      "title": "Storage & File Systems",
+      "path": "docs/13-storage-and-file-systems/README.md",
+      "slug": [
+        "13-storage-and-file-systems"
+      ]
+    },
+    {
+      "title": "Backup & Retention",
+      "path": "docs/13-storage-and-file-systems/backup-and-retention.md",
+      "slug": [
+        "13-storage-and-file-systems",
+        "backup-and-retention"
+      ]
+    },
+    {
+      "title": "Block vs File vs Object Storage",
+      "path": "docs/13-storage-and-file-systems/block-vs-file-vs-object-storage.md",
+      "slug": [
+        "13-storage-and-file-systems",
+        "block-vs-file-vs-object-storage"
+      ]
+    },
+    {
+      "title": "Data Lakes & Warehouses",
+      "path": "docs/13-storage-and-file-systems/data-lakes-and-warehouses.md",
+      "slug": [
+        "13-storage-and-file-systems",
+        "data-lakes-and-warehouses"
+      ]
+    },
+    {
+      "title": "Distributed File Systems",
+      "path": "docs/13-storage-and-file-systems/distributed-file-systems.md",
+      "slug": [
+        "13-storage-and-file-systems",
+        "distributed-file-systems"
+      ]
+    },
+    {
+      "title": "Ephemeral Storage",
+      "path": "docs/13-storage-and-file-systems/ephemeral-storage.md",
+      "slug": [
+        "13-storage-and-file-systems",
+        "ephemeral-storage"
+      ]
+    },
+    {
+      "title": "Observability & Monitoring",
+      "path": "docs/14-observability-and-monitoring/README.md",
+      "slug": [
+        "14-observability-and-monitoring"
+      ]
+    },
+    {
+      "title": "Distributed Tracing",
+      "path": "docs/14-observability-and-monitoring/distributed-tracing.md",
+      "slug": [
+        "14-observability-and-monitoring",
+        "distributed-tracing"
+      ]
+    },
+    {
+      "title": "Health Checks",
+      "path": "docs/14-observability-and-monitoring/health-checks.md",
+      "slug": [
+        "14-observability-and-monitoring",
+        "health-checks"
+      ]
+    },
+    {
+      "title": "Logging",
+      "path": "docs/14-observability-and-monitoring/logging.md",
+      "slug": [
+        "14-observability-and-monitoring",
+        "logging"
+      ]
+    },
+    {
+      "title": "Metrics",
+      "path": "docs/14-observability-and-monitoring/metrics.md",
+      "slug": [
+        "14-observability-and-monitoring",
+        "metrics"
+      ]
+    },
+    {
+      "title": "SLI, SLO, SLA",
+      "path": "docs/14-observability-and-monitoring/sli-slo-sla.md",
+      "slug": [
+        "14-observability-and-monitoring",
+        "sli-slo-sla"
+      ]
+    },
+    {
+      "title": "Design Patterns",
+      "path": "docs/15-design-patterns/README.md",
+      "slug": [
+        "15-design-patterns"
+      ]
+    },
+    {
+      "title": "Bulkhead Pattern",
+      "path": "docs/15-design-patterns/bulkhead-pattern.md",
+      "slug": [
+        "15-design-patterns",
+        "bulkhead-pattern"
+      ]
+    },
+    {
+      "title": "Circuit Breaker Pattern",
+      "path": "docs/15-design-patterns/circuit-breaker-pattern.md",
+      "slug": [
+        "15-design-patterns",
+        "circuit-breaker-pattern"
+      ]
+    },
+    {
+      "title": "Creational Patterns",
+      "path": "docs/15-design-patterns/creational-patterns.md",
+      "slug": [
+        "15-design-patterns",
+        "creational-patterns"
+      ]
+    },
+    {
+      "title": "Rate Limiter Pattern",
+      "path": "docs/15-design-patterns/rate-limiter-pattern.md",
+      "slug": [
+        "15-design-patterns",
+        "rate-limiter-pattern"
+      ]
+    },
+    {
+      "title": "Retry Pattern",
+      "path": "docs/15-design-patterns/retry-pattern.md",
+      "slug": [
+        "15-design-patterns",
+        "retry-pattern"
+      ]
+    },
+    {
+      "title": "Structural & Behavioral Patterns",
+      "path": "docs/15-design-patterns/structural-and-behavioral-patterns.md",
+      "slug": [
+        "15-design-patterns",
+        "structural-and-behavioral-patterns"
+      ]
+    }
+  ]
+}

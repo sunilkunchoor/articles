@@ -1,0 +1,412 @@
+{
+  "type": "remote",
+  "slug": "pytorch-101",
+  "owner": "sunilkunchoor",
+  "repo": "pytorch-101",
+  "branch": "main",
+  "title": "PyTorch 101: Zero to Hero",
+  "date": "2026-07-11",
+  "summary": "A comprehensive developer-focused introduction to PyTorch, starting from basic tensors and autograd to deep learning, convolutional networks, transformers, PyTorch Lightning, and deployment.",
+  "tags": [
+    "PyTorch",
+    "Deep Learning",
+    "Neural Networks",
+    "Machine Learning",
+    "Computer Vision",
+    "NLP"
+  ],
+  "author": "Sunil Kunchoor Basavaraju",
+  "mainPath": "README.md",
+  "subPages": [
+    {
+      "title": "Module 01 — Tensors 🧊",
+      "path": "docs/01-tensors/README.md",
+      "slug": [
+        "01-tensors"
+      ]
+    },
+    {
+      "title": "01 · Creating Tensors 🧊",
+      "path": "docs/01-tensors/01-creating-tensors.md",
+      "slug": [
+        "01-tensors",
+        "01-creating-tensors"
+      ]
+    },
+    {
+      "title": "02 · Indexing & Reshaping 🔪",
+      "path": "docs/01-tensors/02-indexing-and-reshaping.md",
+      "slug": [
+        "01-tensors",
+        "02-indexing-and-reshaping"
+      ]
+    },
+    {
+      "title": "03 · Tensor Math ➗",
+      "path": "docs/01-tensors/03-tensor-math.md",
+      "slug": [
+        "01-tensors",
+        "03-tensor-math"
+      ]
+    },
+    {
+      "title": "04 · Device Placement 🖥️⚡",
+      "path": "docs/01-tensors/04-device-placement.md",
+      "slug": [
+        "01-tensors",
+        "04-device-placement"
+      ]
+    },
+    {
+      "title": "Module 02 — Autograd ⚙️",
+      "path": "docs/02-autograd/README.md",
+      "slug": [
+        "02-autograd"
+      ]
+    },
+    {
+      "title": "01 · The Computational Graph 🕸️",
+      "path": "docs/02-autograd/01-computational-graph.md",
+      "slug": [
+        "02-autograd",
+        "01-computational-graph"
+      ]
+    },
+    {
+      "title": "02 · Backward Pass & Gradients ⬅️",
+      "path": "docs/02-autograd/02-backward-and-gradients.md",
+      "slug": [
+        "02-autograd",
+        "02-backward-and-gradients"
+      ]
+    },
+    {
+      "title": "03 · Turning Autograd Off 🛑",
+      "path": "docs/02-autograd/03-no-grad-and-detach.md",
+      "slug": [
+        "02-autograd",
+        "03-no-grad-and-detach"
+      ]
+    },
+    {
+      "title": "04 · Gradient Gotchas 🪤",
+      "path": "docs/02-autograd/04-gradient-gotchas.md",
+      "slug": [
+        "02-autograd",
+        "04-gradient-gotchas"
+      ]
+    },
+    {
+      "title": "Module 03 — Neural Networks",
+      "path": "docs/03-neural-networks/README.md",
+      "slug": [
+        "03-neural-networks"
+      ]
+    },
+    {
+      "title": "01 · The `nn.Module` Basics 🧱",
+      "path": "docs/03-neural-networks/01-nn-module-basics.md",
+      "slug": [
+        "03-neural-networks",
+        "01-nn-module-basics"
+      ]
+    },
+    {
+      "title": "02 · Common Layers 🧩",
+      "path": "docs/03-neural-networks/02-common-layers.md",
+      "slug": [
+        "03-neural-networks",
+        "02-common-layers"
+      ]
+    },
+    {
+      "title": "03 · Building a Network 🏗️",
+      "path": "docs/03-neural-networks/03-building-a-network.md",
+      "slug": [
+        "03-neural-networks",
+        "03-building-a-network"
+      ]
+    },
+    {
+      "title": "04 · Inspecting Models 🔍",
+      "path": "docs/03-neural-networks/04-model-inspection.md",
+      "slug": [
+        "03-neural-networks",
+        "04-model-inspection"
+      ]
+    },
+    {
+      "title": "Module 04 — Data Handling 🗂️",
+      "path": "docs/04-data-handling/README.md",
+      "slug": [
+        "04-data-handling"
+      ]
+    },
+    {
+      "title": "01 · Dataset Basics 📇",
+      "path": "docs/04-data-handling/01-dataset-basics.md",
+      "slug": [
+        "04-data-handling",
+        "01-dataset-basics"
+      ]
+    },
+    {
+      "title": "02 · The DataLoader 🚚",
+      "path": "docs/04-data-handling/02-dataloader.md",
+      "slug": [
+        "04-data-handling",
+        "02-dataloader"
+      ]
+    },
+    {
+      "title": "03 · Transforms 🎨",
+      "path": "docs/04-data-handling/03-transforms.md",
+      "slug": [
+        "04-data-handling",
+        "03-transforms"
+      ]
+    },
+    {
+      "title": "04 · Splits & Built-in Datasets ✂️",
+      "path": "docs/04-data-handling/04-splits-and-built-in-datasets.md",
+      "slug": [
+        "04-data-handling",
+        "04-splits-and-built-in-datasets"
+      ]
+    },
+    {
+      "title": "Module 05 — The Training Loop 🔁",
+      "path": "docs/05-training-loop/README.md",
+      "slug": [
+        "05-training-loop"
+      ]
+    },
+    {
+      "title": "01 · Loss Functions 🎯",
+      "path": "docs/05-training-loop/01-loss-functions.md",
+      "slug": [
+        "05-training-loop",
+        "01-loss-functions"
+      ]
+    },
+    {
+      "title": "02 · Optimizers ⚙️",
+      "path": "docs/05-training-loop/02-optimizers.md",
+      "slug": [
+        "05-training-loop",
+        "02-optimizers"
+      ]
+    },
+    {
+      "title": "03 · The Training Loop 🔁",
+      "path": "docs/05-training-loop/03-the-training-loop.md",
+      "slug": [
+        "05-training-loop",
+        "03-the-training-loop"
+      ]
+    },
+    {
+      "title": "04 · Evaluation & Metrics 📊",
+      "path": "docs/05-training-loop/04-evaluation-and-metrics.md",
+      "slug": [
+        "05-training-loop",
+        "04-evaluation-and-metrics"
+      ]
+    },
+    {
+      "title": "Module 06 — Saving & Loading 💾",
+      "path": "docs/06-saving-loading/README.md",
+      "slug": [
+        "06-saving-loading"
+      ]
+    },
+    {
+      "title": "01 · `state_dict` Basics 💾",
+      "path": "docs/06-saving-loading/01-state-dict-basics.md",
+      "slug": [
+        "06-saving-loading",
+        "01-state-dict-basics"
+      ]
+    },
+    {
+      "title": "02 · Checkpoints & Resuming ⏸️",
+      "path": "docs/06-saving-loading/02-checkpoints.md",
+      "slug": [
+        "06-saving-loading",
+        "02-checkpoints"
+      ]
+    },
+    {
+      "title": "03 · Loading for Inference 🚀",
+      "path": "docs/06-saving-loading/03-loading-for-inference.md",
+      "slug": [
+        "06-saving-loading",
+        "03-loading-for-inference"
+      ]
+    },
+    {
+      "title": "04 · Best Model & Early Stopping 🏅",
+      "path": "docs/06-saving-loading/04-best-model-and-early-stopping.md",
+      "slug": [
+        "06-saving-loading",
+        "04-best-model-and-early-stopping"
+      ]
+    },
+    {
+      "title": "Module 07 — Computer Vision 👁️",
+      "path": "docs/07-computer-vision/README.md",
+      "slug": [
+        "07-computer-vision"
+      ]
+    },
+    {
+      "title": "01 · Convolutions 🔲",
+      "path": "docs/07-computer-vision/01-convolutions.md",
+      "slug": [
+        "07-computer-vision",
+        "01-convolutions"
+      ]
+    },
+    {
+      "title": "02 · CNN Architecture 🏛️",
+      "path": "docs/07-computer-vision/02-cnn-architecture.md",
+      "slug": [
+        "07-computer-vision",
+        "02-cnn-architecture"
+      ]
+    },
+    {
+      "title": "03 · Transfer Learning 🔁",
+      "path": "docs/07-computer-vision/03-transfer-learning.md",
+      "slug": [
+        "07-computer-vision",
+        "03-transfer-learning"
+      ]
+    },
+    {
+      "title": "04 · Image Classification Project 🧪",
+      "path": "docs/07-computer-vision/04-image-classification-project.md",
+      "slug": [
+        "07-computer-vision",
+        "04-image-classification-project"
+      ]
+    },
+    {
+      "title": "Module 08 — NLP & Transformers 💬",
+      "path": "docs/08-nlp-transformers/README.md",
+      "slug": [
+        "08-nlp-transformers"
+      ]
+    },
+    {
+      "title": "01 · Text Data & Tokenization 🔤",
+      "path": "docs/08-nlp-transformers/01-text-data-and-tokenization.md",
+      "slug": [
+        "08-nlp-transformers",
+        "01-text-data-and-tokenization"
+      ]
+    },
+    {
+      "title": "02 · Embeddings 🧭",
+      "path": "docs/08-nlp-transformers/02-embeddings.md",
+      "slug": [
+        "08-nlp-transformers",
+        "02-embeddings"
+      ]
+    },
+    {
+      "title": "03 · Recurrent Layers & LSTMs 🔄",
+      "path": "docs/08-nlp-transformers/03-recurrent-layers-lstm.md",
+      "slug": [
+        "08-nlp-transformers",
+        "03-recurrent-layers-lstm"
+      ]
+    },
+    {
+      "title": "04 · Intro to Transformers ⚡",
+      "path": "docs/08-nlp-transformers/04-intro-to-transformers.md",
+      "slug": [
+        "08-nlp-transformers",
+        "04-intro-to-transformers"
+      ]
+    },
+    {
+      "title": "Module 09 — Ecosystem: PyTorch Lightning ⚡",
+      "path": "docs/09-ecosystem-lightning/README.md",
+      "slug": [
+        "09-ecosystem-lightning"
+      ]
+    },
+    {
+      "title": "01 · Why Lightning? 🤔",
+      "path": "docs/09-ecosystem-lightning/01-why-lightning.md",
+      "slug": [
+        "09-ecosystem-lightning",
+        "01-why-lightning"
+      ]
+    },
+    {
+      "title": "02 · The LightningModule 🧩",
+      "path": "docs/09-ecosystem-lightning/02-the-lightningmodule.md",
+      "slug": [
+        "09-ecosystem-lightning",
+        "02-the-lightningmodule"
+      ]
+    },
+    {
+      "title": "03 · The Trainer 🎛️",
+      "path": "docs/09-ecosystem-lightning/03-the-trainer.md",
+      "slug": [
+        "09-ecosystem-lightning",
+        "03-the-trainer"
+      ]
+    },
+    {
+      "title": "04 · DataModules & Callbacks 🧰",
+      "path": "docs/09-ecosystem-lightning/04-datamodules-and-callbacks.md",
+      "slug": [
+        "09-ecosystem-lightning",
+        "04-datamodules-and-callbacks"
+      ]
+    },
+    {
+      "title": "Module 10 — Deployment & Optimization 🚀",
+      "path": "docs/10-deployment-optimization/README.md",
+      "slug": [
+        "10-deployment-optimization"
+      ]
+    },
+    {
+      "title": "01 · Exporting Models 📦",
+      "path": "docs/10-deployment-optimization/01-exporting-models.md",
+      "slug": [
+        "10-deployment-optimization",
+        "01-exporting-models"
+      ]
+    },
+    {
+      "title": "02 · `torch.compile` ⚡",
+      "path": "docs/10-deployment-optimization/02-torch-compile.md",
+      "slug": [
+        "10-deployment-optimization",
+        "02-torch-compile"
+      ]
+    },
+    {
+      "title": "03 · Inference Optimization 🪶",
+      "path": "docs/10-deployment-optimization/03-inference-optimization.md",
+      "slug": [
+        "10-deployment-optimization",
+        "03-inference-optimization"
+      ]
+    },
+    {
+      "title": "04 · Serving & Next Steps 🎓",
+      "path": "docs/10-deployment-optimization/04-serving-and-next-steps.md",
+      "slug": [
+        "10-deployment-optimization",
+        "04-serving-and-next-steps"
+      ]
+    }
+  ]
+}

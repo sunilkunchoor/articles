@@ -1,0 +1,280 @@
+{
+  "type": "remote",
+  "slug": "logferry",
+  "owner": "sunilkunchoor",
+  "repo": "logferry",
+  "branch": "main",
+  "title": "Rust for the Python Programmer (logferry)",
+  "date": "2026-07-05",
+  "summary": "Learn Rust starting from what you know in Python. Maps variables, control flows, objects, error handling, and concurrency, ending with a multi-threaded Rust extension for Python.",
+  "tags": [
+    "Rust",
+    "Python",
+    "PyO3",
+    "Performance",
+    "Multithreading"
+  ],
+  "author": "Sunil Kunchoor Basavaraju",
+  "mainPath": "docs/README.md",
+  "subPages": [
+    {
+      "title": "Getting Started",
+      "path": "docs/01-getting-started/README.md",
+      "slug": [
+        "01-getting-started"
+      ]
+    },
+    {
+      "title": "What is Rust?",
+      "path": "docs/01-getting-started/what-is-rust.md",
+      "slug": [
+        "01-getting-started",
+        "what-is-rust"
+      ]
+    },
+    {
+      "title": "Installation",
+      "path": "docs/01-getting-started/installation.md",
+      "slug": [
+        "01-getting-started",
+        "installation"
+      ]
+    },
+    {
+      "title": "Your First Project",
+      "path": "docs/01-getting-started/your-first-project.md",
+      "slug": [
+        "01-getting-started",
+        "your-first-project"
+      ]
+    },
+    {
+      "title": "IDE Setup",
+      "path": "docs/01-getting-started/ide-setup.md",
+      "slug": [
+        "01-getting-started",
+        "ide-setup"
+      ]
+    },
+    {
+      "title": "Rust Language Fundamentals",
+      "path": "docs/02-rust-language-fundamentals/README.md",
+      "slug": [
+        "02-rust-language-fundamentals"
+      ]
+    },
+    {
+      "title": "Variables and Types",
+      "path": "docs/02-rust-language-fundamentals/variables-and-types.md",
+      "slug": [
+        "02-rust-language-fundamentals",
+        "variables-and-types"
+      ]
+    },
+    {
+      "title": "Functions and Control Flow",
+      "path": "docs/02-rust-language-fundamentals/functions-and-control-flow.md",
+      "slug": [
+        "02-rust-language-fundamentals",
+        "functions-and-control-flow"
+      ]
+    },
+    {
+      "title": "Ownership",
+      "path": "docs/02-rust-language-fundamentals/ownership.md",
+      "slug": [
+        "02-rust-language-fundamentals",
+        "ownership"
+      ]
+    },
+    {
+      "title": "Borrowing and Slices",
+      "path": "docs/02-rust-language-fundamentals/borrowing-and-slices.md",
+      "slug": [
+        "02-rust-language-fundamentals",
+        "borrowing-and-slices"
+      ]
+    },
+    {
+      "title": "Structs and Enums",
+      "path": "docs/02-rust-language-fundamentals/structs-and-enums.md",
+      "slug": [
+        "02-rust-language-fundamentals",
+        "structs-and-enums"
+      ]
+    },
+    {
+      "title": "Error Handling",
+      "path": "docs/02-rust-language-fundamentals/error-handling.md",
+      "slug": [
+        "02-rust-language-fundamentals",
+        "error-handling"
+      ]
+    },
+    {
+      "title": "Collections",
+      "path": "docs/02-rust-language-fundamentals/collections.md",
+      "slug": [
+        "02-rust-language-fundamentals",
+        "collections"
+      ]
+    },
+    {
+      "title": "Closures and Iterators",
+      "path": "docs/02-rust-language-fundamentals/closures-and-iterators.md",
+      "slug": [
+        "02-rust-language-fundamentals",
+        "closures-and-iterators"
+      ]
+    },
+    {
+      "title": "Traits and Generics",
+      "path": "docs/02-rust-language-fundamentals/traits-and-generics.md",
+      "slug": [
+        "02-rust-language-fundamentals",
+        "traits-and-generics"
+      ]
+    },
+    {
+      "title": "Modules and Crates",
+      "path": "docs/02-rust-language-fundamentals/modules-and-crates.md",
+      "slug": [
+        "02-rust-language-fundamentals",
+        "modules-and-crates"
+      ]
+    },
+    {
+      "title": "Project Setup and Tooling",
+      "path": "docs/03-project-setup-and-tooling/README.md",
+      "slug": [
+        "03-project-setup-and-tooling"
+      ]
+    },
+    {
+      "title": "Cargo In Depth",
+      "path": "docs/03-project-setup-and-tooling/cargo-in-depth.md",
+      "slug": [
+        "03-project-setup-and-tooling",
+        "cargo-in-depth"
+      ]
+    },
+    {
+      "title": "Dependencies",
+      "path": "docs/03-project-setup-and-tooling/dependencies.md",
+      "slug": [
+        "03-project-setup-and-tooling",
+        "dependencies"
+      ]
+    },
+    {
+      "title": "Testing",
+      "path": "docs/03-project-setup-and-tooling/testing.md",
+      "slug": [
+        "03-project-setup-and-tooling",
+        "testing"
+      ]
+    },
+    {
+      "title": "Daily Workflow",
+      "path": "docs/03-project-setup-and-tooling/daily-workflow.md",
+      "slug": [
+        "03-project-setup-and-tooling",
+        "daily-workflow"
+      ]
+    },
+    {
+      "title": "PyO3 and Logferry",
+      "path": "docs/04-pyo3-and-logferry/README.md",
+      "slug": [
+        "04-pyo3-and-logferry"
+      ]
+    },
+    {
+      "title": "PyO3 Overview",
+      "path": "docs/04-pyo3-and-logferry/pyo3-overview.md",
+      "slug": [
+        "04-pyo3-and-logferry",
+        "pyo3-overview"
+      ]
+    },
+    {
+      "title": "Exposing Functions",
+      "path": "docs/04-pyo3-and-logferry/exposing-functions.md",
+      "slug": [
+        "04-pyo3-and-logferry",
+        "exposing-functions"
+      ]
+    },
+    {
+      "title": "Exposing Classes",
+      "path": "docs/04-pyo3-and-logferry/exposing-classes.md",
+      "slug": [
+        "04-pyo3-and-logferry",
+        "exposing-classes"
+      ]
+    },
+    {
+      "title": "Error Handling in PyO3",
+      "path": "docs/04-pyo3-and-logferry/error-handling-pyo3.md",
+      "slug": [
+        "04-pyo3-and-logferry",
+        "error-handling-pyo3"
+      ]
+    },
+    {
+      "title": "Multithreading and the GIL",
+      "path": "docs/04-pyo3-and-logferry/multithreading-and-gil.md",
+      "slug": [
+        "04-pyo3-and-logferry",
+        "multithreading-and-gil"
+      ]
+    },
+    {
+      "title": "logferry Walkthrough",
+      "path": "docs/04-pyo3-and-logferry/logferry-walkthrough.md",
+      "slug": [
+        "04-pyo3-and-logferry",
+        "logferry-walkthrough"
+      ]
+    },
+    {
+      "title": "Distribution",
+      "path": "docs/04-pyo3-and-logferry/distribution.md",
+      "slug": [
+        "04-pyo3-and-logferry",
+        "distribution"
+      ]
+    },
+    {
+      "title": "Cargo Cheatsheet",
+      "path": "docs/05-reference/cargo-cheatsheet.md",
+      "slug": [
+        "05-reference",
+        "cargo-cheatsheet"
+      ]
+    },
+    {
+      "title": "Reference",
+      "path": "docs/05-reference/README.md",
+      "slug": [
+        "05-reference"
+      ]
+    },
+    {
+      "title": "Python → Rust Cheatsheet",
+      "path": "docs/05-reference/python-to-rust-cheatsheet.md",
+      "slug": [
+        "05-reference",
+        "python-to-rust-cheatsheet"
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "path": "docs/05-reference/troubleshooting.md",
+      "slug": [
+        "05-reference",
+        "troubleshooting"
+      ]
+    }
+  ]
+}

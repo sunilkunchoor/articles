@@ -1,0 +1,109 @@
+{
+  "type": "remote",
+  "slug": "ai-system-architecture",
+  "owner": "sunilkunchoor",
+  "repo": "ai-system-architecture",
+  "branch": "main",
+  "title": "AI System Architecture Concepts",
+  "date": "2026-07-11",
+  "summary": "The definitive guide on modern AI system architecture. Master vector databases, embedding models, retrieval-augmented generation (RAG), prompt engineering, semantic caching, MCP, autonomous agents, and guardrail design.",
+  "tags": [
+    "AI Architecture",
+    "Vector Database",
+    "RAG",
+    "Agentic AI",
+    "MCP",
+    "System Design"
+  ],
+  "author": "Sunil Kunchoor Basavaraju",
+  "mainPath": "docs/README.md",
+  "subPages": [
+    {
+      "title": "1. Vector Database",
+      "path": "docs/01-vector-database/README.md",
+      "slug": [
+        "01-vector-database"
+      ]
+    },
+    {
+      "title": "2. Embedding Model",
+      "path": "docs/02-embedding-model/README.md",
+      "slug": [
+        "02-embedding-model"
+      ]
+    },
+    {
+      "title": "3. RAG (Retrieval Augmented Generation)",
+      "path": "docs/03-rag/README.md",
+      "slug": [
+        "03-rag"
+      ]
+    },
+    {
+      "title": "Advanced RAG",
+      "path": "docs/03-rag/advanced-rag.md",
+      "slug": [
+        "03-rag",
+        "advanced-rag"
+      ]
+    },
+    {
+      "title": "Agentic RAG",
+      "path": "docs/03-rag/agentic-rag.md",
+      "slug": [
+        "03-rag",
+        "agentic-rag"
+      ]
+    },
+    {
+      "title": "Modular RAG",
+      "path": "docs/03-rag/modular-rag.md",
+      "slug": [
+        "03-rag",
+        "modular-rag"
+      ]
+    },
+    {
+      "title": "4. Prompt Engineering",
+      "path": "docs/04-prompt-engineering/README.md",
+      "slug": [
+        "04-prompt-engineering"
+      ]
+    },
+    {
+      "title": "5. Semantic Cache",
+      "path": "docs/05-semantic-cache/README.md",
+      "slug": [
+        "05-semantic-cache"
+      ]
+    },
+    {
+      "title": "6. MCP (Model Context Protocol)",
+      "path": "docs/06-mcp/README.md",
+      "slug": [
+        "06-mcp"
+      ]
+    },
+    {
+      "title": "7. AI Agent",
+      "path": "docs/07-ai-agent/README.md",
+      "slug": [
+        "07-ai-agent"
+      ]
+    },
+    {
+      "title": "8. Function Calling",
+      "path": "docs/08-function-calling/README.md",
+      "slug": [
+        "08-function-calling"
+      ]
+    },
+    {
+      "title": "9. Agent Guardrails",
+      "path": "docs/09-agent-guardrails/README.md",
+      "slug": [
+        "09-agent-guardrails"
+      ]
+    }
+  ]
+}

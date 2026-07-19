@@ -1,0 +1,104 @@
+{
+  "type": "remote",
+  "slug": "pgp-ai-ml",
+  "owner": "sunilkunchoor",
+  "repo": "pgp-ai-ml",
+  "branch": "main",
+  "title": "PGP in Artificial Intelligence & Machine Learning",
+  "date": "2026-06-28",
+  "summary": "A deep dive into PGP Program",
+  "tags": [
+    "Data Science",
+    "AI",
+    "ML",
+    "Neural Network"
+  ],
+  "author": "Sunil Kunchoor Basavaraju",
+  "mainPath": "README.md",
+  "subPages": [
+    {
+      "title": "Applied_Statistics",
+      "path": "01_Applied_Statistics/README.md",
+      "slug": [
+        "01_Applied_Statistics"
+      ]
+    },
+    {
+      "title": "Supervised Learning",
+      "path": "02_Supervised_Learning/README.md",
+      "slug": [
+        "02_Supervised_Learning"
+      ]
+    },
+    {
+      "title": "Ensemble Techniques",
+      "path": "03_Ensemble_Techniques/README.md",
+      "slug": [
+        "03_Ensemble_Techniques"
+      ]
+    },
+    {
+      "title": "Unsupervised Learning",
+      "path": "04_Unsupervised_Learning/README.md",
+      "slug": [
+        "04_Unsupervised_Learning"
+      ]
+    },
+    {
+      "title": "Feature Engineering & Model Tuning",
+      "path": "05_Feature_Engineering_Model_Tuning/README.md",
+      "slug": [
+        "05_Feature_Engineering_Model_Tuning"
+      ]
+    },
+    {
+      "title": "Recommendation Systems",
+      "path": "06_Recommendation_Systems/README.md",
+      "slug": [
+        "06_Recommendation_Systems"
+      ]
+    },
+    {
+      "title": "Neural Networks & Deep Learning",
+      "path": "07_Neural_Networks_Deep_Learning/README.md",
+      "slug": [
+        "07_Neural_Networks_Deep_Learning"
+      ]
+    },
+    {
+      "title": "Computer Vision (CNN & Transfer Learning)",
+      "path": "08_Computer_Vision_CNN_Transfer_Learning/README.md",
+      "slug": [
+        "08_Computer_Vision_CNN_Transfer_Learning"
+      ]
+    },
+    {
+      "title": "Computer Vision (Object Detection & Segmentation)",
+      "path": "09_Computer_Vision_Object_Detection/README.md",
+      "slug": [
+        "09_Computer_Vision_Object_Detection"
+      ]
+    },
+    {
+      "title": "Statistical NLP",
+      "path": "10_Statistical_NLP/README.md",
+      "slug": [
+        "10_Statistical_NLP"
+      ]
+    },
+    {
+      "title": "Sequential NLP",
+      "path": "11_Sequential_NLP/README.md",
+      "slug": [
+        "11_Sequential_NLP"
+      ]
+    },
+    {
+      "title": "Capstone Project - AI & ML",
+      "path": "12_Capstone_Project_AIML/README.md",
+      "slug": [
+        "12_Capstone_Project_AIML"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "type": "remote",
+  "slug": "airflow-custom-sdk",
+  "owner": "sunilkunchoor",
+  "repo": "airflow-custom-sdk",
+  "branch": "main",
+  "title": "Airflow Custom SDK",
+  "date": "2026-06-28",
+  "summary": "A comprehensive custom SDK and plugin package for Apache Airflow",
+  "tags": [
+    "Airflow",
+    "Python",
+    "Azure",
+    "Databricks",
+    "Telemetry"
+  ],
+  "author": "Sunil Kunchoor Basavaraju",
+  "mainPath": "README.md",
+  "subPages": [
+    {
+      "title": "Databricks",
+      "path": "custom_sdk/databricks/README.md",
+      "slug": [
+        "databricks"
+      ]
+    },
+    {
+      "title": "Azure",
+      "path": "custom_sdk/azure/README.md",
+      "slug": [
+        "azure"
+      ]
+    }
+  ]
+}

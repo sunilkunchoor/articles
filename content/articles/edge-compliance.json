@@ -1,0 +1,20 @@
+{
+  "type": "remote",
+  "slug": "edge-compliance",
+  "owner": "sunilkunchoor",
+  "repo": "edge-compliance",
+  "branch": "main",
+  "title": "AI-Powered QSR: Edge Compliance & Benchmarking",
+  "date": "2026-06-28",
+  "summary": "A benchmarking study of small form factor hardware devices managing edge AI workloads for QSRs.",
+  "tags": [
+    "Edge AI",
+    "OpenVINO",
+    "Benchmarking",
+    "AWS IoT",
+    "ASR"
+  ],
+  "author": "Sunil Kunchoor Basavaraju",
+  "mainPath": "README.md",
+  "subPages": []
+}

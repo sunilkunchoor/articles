@@ -1,0 +1,22 @@
+{
+  "placeholderImages": [
+    {
+      "id": "mlops-bg",
+      "description": "Subtle dark engineering grid background",
+      "imageUrl": "https://images.unsplash.com/photo-1759494625703-5bb09aa810d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMGdyaWR8ZW58MHx8fHwxNzcwNjMxMTUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "engineering grid"
+    },
+    {
+      "id": "azure-logo",
+      "description": "Abstract Azure representation",
+      "imageUrl": "https://images.unsplash.com/photo-1748638131161-27f55fa4a6aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxibHVlJTIwY2xvdWR8ZW58MHx8fHwxNzcwNjMxMTUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blue cloud"
+    },
+    {
+      "id": "databricks-logo",
+      "description": "Abstract Databricks representation",
+      "imageUrl": "https://images.unsplash.com/photo-1557264337-e8a93017fe92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwdXJwbGUlMjB0ZWNofGVufDB8fHx8MTc3MDYzMTE1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "purple tech"
+    }
+  ]
+}

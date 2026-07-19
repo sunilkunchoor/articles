@@ -1,0 +1,147 @@
+{
+  "type": "remote",
+  "slug": "apache-spark",
+  "owner": "sunilkunchoor",
+  "repo": "apache-spark",
+  "branch": "main",
+  "title": "The Practical Guide to Apache Spark & PySpark",
+  "date": "2026-06-10",
+  "summary": "A modular, beginner-friendly guide to Apache Spark and PySpark — 18 focused modules covering architecture, DataFrames, execution engine, Spark SQL, MLlib, and performance tuning.",
+  "tags": [
+    "Apache Spark",
+    "PySpark",
+    "Data Engineering",
+    "Big Data",
+    "Distributed Computing"
+  ],
+  "author": "Sunil Kunchoor Basavaraju",
+  "mainPath": "docs/README.md",
+  "subPages": [
+    {
+      "title": "What is Spark?",
+      "path": "docs/01-what-is-spark.md",
+      "slug": [
+        "01-what-is-spark"
+      ]
+    },
+    {
+      "title": "Spark Architecture",
+      "path": "docs/02-spark-architecture.md",
+      "slug": [
+        "02-spark-architecture"
+      ]
+    },
+    {
+      "title": "Partitions & Parallelism",
+      "path": "docs/03-partitions-and-parallelism.md",
+      "slug": [
+        "03-partitions-and-parallelism"
+      ]
+    },
+    {
+      "title": "RDDs, DataFrames, Datasets",
+      "path": "docs/04-rdds-dataframes-datasets.md",
+      "slug": [
+        "04-rdds-dataframes-datasets"
+      ]
+    },
+    {
+      "title": "Transformations & Actions",
+      "path": "docs/05-transformations-and-actions.md",
+      "slug": [
+        "05-transformations-and-actions"
+      ]
+    },
+    {
+      "title": "Lazy Evaluation & the DAG",
+      "path": "docs/06-lazy-evaluation-and-the-dag.md",
+      "slug": [
+        "06-lazy-evaluation-and-the-dag"
+      ]
+    },
+    {
+      "title": "The Shuffle",
+      "path": "docs/07-the-shuffle.md",
+      "slug": [
+        "07-the-shuffle"
+      ]
+    },
+    {
+      "title": "Catalyst & Tungsten",
+      "path": "docs/08-catalyst-and-tungsten.md",
+      "slug": [
+        "08-catalyst-and-tungsten"
+      ]
+    },
+    {
+      "title": "SparkSession Getting Started",
+      "path": "docs/09-sparksession-getting-started.md",
+      "slug": [
+        "09-sparksession-getting-started"
+      ]
+    },
+    {
+      "title": "DataFrame Operations",
+      "path": "docs/10-dataframe-operations.md",
+      "slug": [
+        "10-dataframe-operations"
+      ]
+    },
+    {
+      "title": "Spark SQL",
+      "path": "docs/11-spark-sql.md",
+      "slug": [
+        "11-spark-sql"
+      ]
+    },
+    {
+      "title": "UDFs & Pandas UDFs",
+      "path": "docs/12-udfs-and-pandas-udfs.md",
+      "slug": [
+        "12-udfs-and-pandas-udfs"
+      ]
+    },
+    {
+      "title": "Structured Streaming",
+      "path": "docs/13-structured-streaming.md",
+      "slug": [
+        "13-structured-streaming"
+      ]
+    },
+    {
+      "title": "MLlib Pipelines",
+      "path": "docs/14-mllib-pipelines.md",
+      "slug": [
+        "14-mllib-pipelines"
+      ]
+    },
+    {
+      "title": "Caching & Persistence",
+      "path": "docs/15-caching-and-persistence.md",
+      "slug": [
+        "15-caching-and-persistence"
+      ]
+    },
+    {
+      "title": "Joins & Broadcast",
+      "path": "docs/16-joins-and-broadcast.md",
+      "slug": [
+        "16-joins-and-broadcast"
+      ]
+    },
+    {
+      "title": "Performance Tuning",
+      "path": "docs/17-performance-tuning.md",
+      "slug": [
+        "17-performance-tuning"
+      ]
+    },
+    {
+      "title": "Glossary & Cheatsheet",
+      "path": "docs/18-glossary-and-cheatsheet.md",
+      "slug": [
+        "18-glossary-and-cheatsheet"
+      ]
+    }
+  ]
+}

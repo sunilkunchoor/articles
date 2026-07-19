@@ -1,0 +1,82 @@
+{
+  "type": "remote",
+  "slug": "c4-model",
+  "owner": "sunilkunchoor",
+  "repo": "c4-model",
+  "branch": "main",
+  "title": "Mastering the C4 Model",
+  "date": "2026-07-15",
+  "summary": "A beginner-friendly guide to drawing software architecture diagrams using the C4 model.",
+  "tags": [
+    "Architecture",
+    "C4 Model",
+    "Diagrams"
+  ],
+  "author": "Sunil Kunchoor Basavaraju",
+  "mainPath": "docs/README.md",
+  "subPages": [
+    {
+      "title": "Boxes and Arrows",
+      "path": "docs/01-boxes-and-arrows.md",
+      "slug": [
+        "01-boxes-and-arrows"
+      ]
+    },
+    {
+      "title": "Google Maps Analogy",
+      "path": "docs/02-google-maps-analogy.md",
+      "slug": [
+        "02-google-maps-analogy"
+      ]
+    },
+    {
+      "title": "Level 1: System Context",
+      "path": "docs/03-level-1-system-context.md",
+      "slug": [
+        "03-level-1-system-context"
+      ]
+    },
+    {
+      "title": "Level 2: Container",
+      "path": "docs/04-level-2-container.md",
+      "slug": [
+        "04-level-2-container"
+      ]
+    },
+    {
+      "title": "Level 3: Component",
+      "path": "docs/05-level-3-component.md",
+      "slug": [
+        "05-level-3-component"
+      ]
+    },
+    {
+      "title": "Level 4: Code",
+      "path": "docs/06-level-4-code.md",
+      "slug": [
+        "06-level-4-code"
+      ]
+    },
+    {
+      "title": "Supporting Diagrams",
+      "path": "docs/07-supporting-diagrams.md",
+      "slug": [
+        "07-supporting-diagrams"
+      ]
+    },
+    {
+      "title": "Tooling",
+      "path": "docs/08-tooling.md",
+      "slug": [
+        "08-tooling"
+      ]
+    },
+    {
+      "title": "Conclusion",
+      "path": "docs/09-conclusion.md",
+      "slug": [
+        "09-conclusion"
+      ]
+    }
+  ]
+}

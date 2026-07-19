@@ -1,0 +1,19 @@
+{
+  "type": "remote",
+  "slug": "skywalker-qa",
+  "owner": "sunilkunchoor",
+  "repo": "skywalker",
+  "branch": "main",
+  "title": "Building Skywalker: Automated QA via Classification & Clustering",
+  "date": "2026-06-25",
+  "summary": "How we automated QA classification and clustering to reduce manual effort by 60% with 99.5% accuracy.",
+  "tags": [
+    "Machine Learning",
+    "Clustering",
+    "NLP",
+    "QA Automation"
+  ],
+  "author": "Sunil Kunchoor Basavaraju",
+  "mainPath": "README.md",
+  "subPages": []
+}
