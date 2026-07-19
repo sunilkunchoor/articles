@@ -173,9 +173,9 @@ export default async function ArticlePage({ params }: PageProps) {
 
         const matchedPage = subPages.find((sub: any) => sub.path === targetRepoPath);
         if (matchedPage) {
-          resolvedHref = `/articles/${mainSlug}/${matchedPage.slug.join('/')}${hash}`;
+          resolvedHref = `/${mainSlug}/${matchedPage.slug.join('/')}${hash}`;
         } else if (mainPath && targetRepoPath === mainPath) {
-          resolvedHref = `/articles/${mainSlug}${hash}`;
+          resolvedHref = `/${mainSlug}${hash}`;
         } else {
           // Fallback if not mapped
           let strippedPath = pathOnly;
@@ -192,7 +192,7 @@ export default async function ArticlePage({ params }: PageProps) {
             if (part === '..') fallbackResolvedParts.pop();
             else fallbackResolvedParts.push(part);
           }
-          resolvedHref = `/articles/${mainSlug}${fallbackResolvedParts.length > 0 ? '/' + fallbackResolvedParts.join('/') : ''}${hash}`;
+          resolvedHref = `/${mainSlug}${fallbackResolvedParts.length > 0 ? '/' + fallbackResolvedParts.join('/') : ''}${hash}`;
         }
       } else {
         // Local files fallback
@@ -209,7 +209,7 @@ export default async function ArticlePage({ params }: PageProps) {
           if (part === '..') resolvedParts.pop();
           else resolvedParts.push(part);
         }
-        resolvedHref = `/articles/${mainSlug}${resolvedParts.length > 0 ? '/' + resolvedParts.join('/') : ''}${hash}`;
+        resolvedHref = `/${mainSlug}${resolvedParts.length > 0 ? '/' + resolvedParts.join('/') : ''}${hash}`;
       }
     }
 
@@ -246,7 +246,7 @@ export default async function ArticlePage({ params }: PageProps) {
         resolvedParts[resolvedParts.length - 1] = `${baseName}.webp`;
       }
       
-      resolvedHref = `/articles/${mainSlug}/${resolvedParts.join('/')}`;
+      resolvedHref = `/${mainSlug}/${resolvedParts.join('/')}`;
     }
     
     return `<img src="${resolvedHref}" alt="${text || ''}"${title ? ` title="${title}"` : ''} />`;
@@ -332,7 +332,7 @@ export default async function ArticlePage({ params }: PageProps) {
                   <span className="text-xs uppercase tracking-wider text-slate-500 font-bold block mb-1">
                     Course / Project
                   </span>
-                  <Link href={`/articles/${mainSlug}`}>
+                  <Link href={`/${mainSlug}`}>
                     <h3 className="font-headline font-semibold text-lg text-white hover:text-primary transition-colors leading-snug">
                       {mainTitle}
                     </h3>
@@ -342,7 +342,7 @@ export default async function ArticlePage({ params }: PageProps) {
                 <nav className="space-y-4">
                   {/* Introduction link */}
                   <Link 
-                    href={`/articles/${mainSlug}`}
+                    href={`/${mainSlug}`}
                     className={`flex items-center space-x-2.5 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${
                       !isSubPage 
                         ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]' 
@@ -367,7 +367,7 @@ export default async function ArticlePage({ params }: PageProps) {
                       const groupKey = sub.slug[0];
                       renderedGroups.add(groupKey);
                       
-                      const groupHref = `/articles/${mainSlug}/${groupKey}`;
+                      const groupHref = `/${mainSlug}/${groupKey}`;
                       const isGroupActive = isSubPage && slug.slice(1).join('/') === groupKey;
                       const children = getGroupChildren(groupKey);
                       
@@ -390,7 +390,7 @@ export default async function ArticlePage({ params }: PageProps) {
                           <div className="space-y-1">
                             {children.map((child: any) => {
                               const childSlugPath = child.slug.join('/');
-                              const childHref = `/articles/${mainSlug}/${childSlugPath}`;
+                              const childHref = `/${mainSlug}/${childSlugPath}`;
                               const isChildActive = isSubPage && slug.slice(1).join('/') === childSlugPath;
 
                               return (
@@ -423,7 +423,7 @@ export default async function ArticlePage({ params }: PageProps) {
                           renderedSubPages.add(child.slug.join('/'));
                         });
                         
-                        const groupHref = `/articles/${mainSlug}/${groupKey}`;
+                        const groupHref = `/${mainSlug}/${groupKey}`;
                         const groupFilePath = path.join(process.cwd(), 'content/articles', mainSlug, `${groupKey}.md`);
                         const hasGroupFile = fs.existsSync(groupFilePath);
                         const isGroupActive = isSubPage && slug.slice(1).join('/') === groupKey;
@@ -450,7 +450,7 @@ export default async function ArticlePage({ params }: PageProps) {
                             <div className="space-y-1">
                               {children.map((child: any) => {
                                 const childSlugPath = child.slug.join('/');
-                                const childHref = `/articles/${mainSlug}/${childSlugPath}`;
+                                const childHref = `/${mainSlug}/${childSlugPath}`;
                                 const isChildActive = isSubPage && slug.slice(1).join('/') === childSlugPath;
 
                                 return (
@@ -476,7 +476,7 @@ export default async function ArticlePage({ params }: PageProps) {
                     }
 
                     // Flat subpage link rendering
-                    const subHref = `/articles/${mainSlug}/${subSlugPath}`;
+                    const subHref = `/${mainSlug}/${subSlugPath}`;
                     const isActive = isSubPage && slug.slice(1).join('/') === subSlugPath;
                     renderedSubPages.add(subSlugPath);
 
@@ -514,7 +514,7 @@ export default async function ArticlePage({ params }: PageProps) {
                   <>
                     <span className="text-slate-600">/</span>
                     <Link 
-                      href={`/articles/${mainSlug}`}
+                      href={`/${mainSlug}`}
                       className="text-sm font-semibold text-slate-400 hover:text-white transition-colors"
                     >
                       {mainTitle}
@@ -531,7 +531,7 @@ export default async function ArticlePage({ params }: PageProps) {
                   </span>
                   <div className="flex flex-wrap gap-2">
                     <Link 
-                      href={`/articles/${mainSlug}`}
+                      href={`/${mainSlug}`}
                       className={`text-xs px-3 py-1.5 rounded-lg border transition-all ${
                         !isSubPage 
                           ? 'bg-primary/10 text-primary border-primary/20' 
@@ -546,7 +546,7 @@ export default async function ArticlePage({ params }: PageProps) {
                       return (
                         <Link 
                           key={subSlugPath}
-                          href={`/articles/${mainSlug}/${subSlugPath}`}
+                          href={`/${mainSlug}/${subSlugPath}`}
                           className={`text-xs px-3 py-1.5 rounded-lg border transition-all ${
                             isActive 
                               ? 'bg-primary/10 text-primary border-primary/20' 

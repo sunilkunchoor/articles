@@ -123,7 +123,7 @@ export default function SearchableArticles({ initialArticles }: SearchableArticl
                 </div>
 
                 {/* Title */}
-                <Link href={`/articles/${article.slug}`}>
+                <Link href={`/${article.slug}`}>
                   <h2 className="font-headline font-bold text-xl text-white mb-3 group-hover:text-primary transition-colors line-clamp-2 leading-snug">
                     {article.title}
                   </h2>
@@ -158,7 +158,7 @@ export default function SearchableArticles({ initialArticles }: SearchableArticl
 
                 {/* Read More */}
                 <Link 
-                  href={`/articles/${article.slug}`}
+                  href={`/${article.slug}`}
                   className="inline-flex items-center text-sm font-semibold text-primary hover:text-primary/80 transition-colors group/link"
                 >
                   Read Full Article

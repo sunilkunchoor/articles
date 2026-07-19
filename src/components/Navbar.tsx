@@ -18,13 +18,13 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'About', href: '/#about' },
-    { name: 'Experience', href: '/#experience' },
-    { name: 'Education', href: '/#education' },
-    { name: 'Certifications', href: '/#certifications' },
-    { name: 'Projects', href: '/#projects' },
-    { name: 'Philosophy', href: '/#philosophy' },
-    { name: 'Articles', href: '/articles' },
+    { name: 'About', href: 'https://sunilkunchoor.github.io/#about' },
+    { name: 'Experience', href: 'https://sunilkunchoor.github.io/#experience' },
+    { name: 'Education', href: 'https://sunilkunchoor.github.io/#education' },
+    { name: 'Certifications', href: 'https://sunilkunchoor.github.io/#certifications' },
+    { name: 'Projects', href: 'https://sunilkunchoor.github.io/#projects' },
+    { name: 'Philosophy', href: 'https://sunilkunchoor.github.io/#philosophy' },
+    { name: 'Knowledge Hub', href: '/' },
   ];
 
   return (
@@ -42,10 +42,10 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => {
-            const isArticles = link.name === 'Articles';
-            const isActive = isArticles && pathname.startsWith('/articles');
+            const isKnowledgeHub = link.name === 'Knowledge Hub';
+            const isActive = isKnowledgeHub;
 
-            if (isArticles) {
+            if (isKnowledgeHub) {
               return (
                 <Link 
                   key={link.name} 
@@ -56,7 +56,7 @@ export default function Navbar() {
                       : 'bg-primary/5 hover:bg-primary/10 border-primary/20 text-primary hover:text-primary-hover shadow-[0_0_10px_rgba(125,249,255,0.05)]'
                   }`}
                 >
-                  Articles
+                  Knowledge Hub
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
@@ -113,8 +113,8 @@ export default function Navbar() {
         <div className="md:hidden glass-nav absolute top-full left-0 right-0 border-t border-white/10 animate-in slide-in-from-top duration-300">
           <div className="flex flex-col p-6 space-y-4">
             {navLinks.map((link) => {
-              const isArticles = link.name === 'Articles';
-              const isActive = isArticles && pathname.startsWith('/articles');
+              const isKnowledgeHub = link.name === 'Knowledge Hub';
+              const isActive = isKnowledgeHub;
 
               return (
                 <Link 
@@ -123,14 +123,14 @@ export default function Navbar() {
                   className={`text-lg font-medium transition-colors flex items-center justify-between ${
                     isActive 
                       ? 'text-primary' 
-                      : isArticles 
+                      : isKnowledgeHub 
                         ? 'text-primary/90' 
                         : 'text-slate-300 hover:text-white'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   <span>{link.name}</span>
-                  {isArticles && (
+                  {isKnowledgeHub && (
                     <span className="relative flex h-2 w-2">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
