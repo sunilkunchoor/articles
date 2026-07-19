@@ -72,7 +72,7 @@ async function processMarkdownImages(rawContent, markdownRepoPath, owner, repo, 
       // Save as WebP unless it's an SVG
       const localFilename = isSvg ? path.basename(resolvedRepoPath) : `${path.basename(resolvedRepoPath, ext)}.webp`;
       const localRelDir = path.dirname(resolvedRepoPath);
-      const localDir = path.join(__dirname, '../public/articles', slug, localRelDir);
+      const localDir = path.join(__dirname, '../public', slug, localRelDir);
       
       if (!fs.existsSync(localDir)) {
         fs.mkdirSync(localDir, { recursive: true });

@@ -62,4 +62,7 @@ content/articles/system-design/
 content/articles/system-design.md
 
 # Dynamically downloaded article images
-/public/articles/
+public/system-design/
+public/ai-system-architecture/
+public/apache-spark/
+public/c4-model/

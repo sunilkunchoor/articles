@@ -213,6 +213,10 @@ export default async function ArticlePage({ params }: PageProps) {
       }
     }
 
+    if (resolvedHref.startsWith('/') && !resolvedHref.startsWith('/articles/')) {
+      resolvedHref = `/articles${resolvedHref}`;
+    }
+
     return `<a href="${resolvedHref}"${title ? ` title="${title}"` : ''}>${displayText}</a>`;
   };
 
@@ -247,6 +251,12 @@ export default async function ArticlePage({ params }: PageProps) {
       }
 
       resolvedHref = `/${mainSlug}/${resolvedParts.join('/')}`;
+    } else if (!href.startsWith('http://') && !href.startsWith('https://') && !href.startsWith('data:') && href.startsWith('/')) {
+      // Just keep it as is, but prefix later
+    }
+
+    if (resolvedHref.startsWith('/') && !resolvedHref.startsWith('/articles/')) {
+      resolvedHref = `/articles${resolvedHref}`;
     }
 
     return `<img src="${resolvedHref}" alt="${text || ''}"${title ? ` title="${title}"` : ''} />`;
