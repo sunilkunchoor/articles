@@ -51,6 +51,8 @@ jobs:
 
       - name: Build with Next.js
         run: npm run build
+        env:
+          GITHUB_PAT: ${{ secrets.ARTICLES_SYNC_TOKEN }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
