@@ -72,7 +72,7 @@ async function processMarkdownImages(rawContent, markdownRepoPath, owner, repo, 
       // Save as WebP unless it's an SVG
       const localFilename = isSvg ? path.basename(resolvedRepoPath) : `${path.basename(resolvedRepoPath, ext)}.webp`;
       const localRelDir = path.dirname(resolvedRepoPath);
-      const localDir = path.join(__dirname, '../public', slug, localRelDir);
+      const localDir = path.join(__dirname, '../public/assets', slug, localRelDir);
       
       if (!fs.existsSync(localDir)) {
         fs.mkdirSync(localDir, { recursive: true });
@@ -92,7 +92,7 @@ async function processMarkdownImages(rawContent, markdownRepoPath, owner, repo, 
 
       // Rewrite markdown image source URL to point locally
       const webRelDir = localRelDir.replace(/\\/g, '/');
-      const newWebUrl = `/articles/${slug}/${webRelDir}/${localFilename}`;
+      const newWebUrl = `/articles/assets/${slug}/${webRelDir}/${localFilename}`;
       const newImageTag = `![${alt}](${newWebUrl})`;
       
       updatedContent = updatedContent.replace(fullMatch, newImageTag);

@@ -259,7 +259,7 @@ export default async function ArticlePage({ params }: PageProps) {
       resolvedHref = `/articles${resolvedHref}`;
     }
 
-    return `<img src="${resolvedHref}" alt="${text || ''}"${title ? ` title="${title}"` : ''} />`;
+    return `<img src="${resolvedHref}" alt="${text || ''}"${title ? ` title="${title}"` : ''} style="user-select: none; -webkit-user-drag: none;" ondragstart="return false;" oncontextmenu="return false;" />`;
   };
 
   // Custom code block renderer to highlight code with Prism based on language
