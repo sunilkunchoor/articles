@@ -49,9 +49,8 @@ async function processMarkdownImages(rawContent, markdownRepoPath, owner, repo, 
     }
 
     try {
-      const resolvedRepoPath = resolveRepoPath(markdownRepoPath, href);
-      const imageUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch || 'main'}/${resolvedRepoPath}`;
-      
+      let resolvedRepoPath = resolveRepoPath(markdownRepoPath, href);
+      let imageUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch || 'main'}/${resolvedRepoPath}`;
       console.log(`    - Downloading image: ${href} -> ${resolvedRepoPath}`);
       
       const headers = {};
@@ -59,26 +58,43 @@ async function processMarkdownImages(rawContent, markdownRepoPath, owner, repo, 
         headers['Authorization'] = `token ${process.env.GITHUB_PAT}`;
       }
       
-      const imgRes = await fetch(imageUrl, { headers });
+      let imgRes = await fetch(imageUrl, { headers });
+      
+      // Auto-correct markdown typos where `../assets/` was used instead of `./assets/`
+      if (!imgRes.ok && href.startsWith('../assets/')) {
+        const fallbackResolvedPath = resolveRepoPath(markdownRepoPath, `./assets/${href.substring(10)}`);
+        const fallbackUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch || 'main'}/${fallbackResolvedPath}`;
+        const fallbackRes = await fetch(fallbackUrl, { headers });
+        
+        if (fallbackRes.ok) {
+          imgRes = fallbackRes;
+          resolvedRepoPath = fallbackResolvedPath;
+          imageUrl = fallbackUrl;
+          console.log(`    - [RECOVERED] Found image at corrected path: ${fallbackResolvedPath}`);
+        }
+      }
+
       if (!imgRes.ok) {
         console.warn(`    [WARNING] Failed to fetch image ${imageUrl}: ${imgRes.status}`);
         continue;
       }
-
-      const buffer = Buffer.from(await imgRes.arrayBuffer());
+      
       const ext = path.extname(resolvedRepoPath).toLowerCase();
       const isSvg = ext === '.svg';
-      
-      // Save as WebP unless it's an SVG
       const localFilename = isSvg ? path.basename(resolvedRepoPath) : `${path.basename(resolvedRepoPath, ext)}.webp`;
       const localRelDir = path.dirname(resolvedRepoPath);
       const localDir = path.join(__dirname, '../public/assets', slug, localRelDir);
+      const localFilePath = path.join(localDir, localFilename);
+
+      const webRelDir = localRelDir.replace(/\\/g, '/');
+      const newWebUrl = `/articles/assets/${slug}/${webRelDir}/${localFilename}`;
+      const newImageTag = `![${alt}](${newWebUrl})`;
+
+      const buffer = Buffer.from(await imgRes.arrayBuffer());
       
       if (!fs.existsSync(localDir)) {
         fs.mkdirSync(localDir, { recursive: true });
       }
-      
-      const localFilePath = path.join(localDir, localFilename);
       
       if (isSvg) {
         fs.writeFileSync(localFilePath, buffer);
@@ -89,11 +105,6 @@ async function processMarkdownImages(rawContent, markdownRepoPath, owner, repo, 
           .toFile(localFilePath);
         console.log(`    - Saved WebP (85% Quality): ${localFilename}`);
       }
-
-      // Rewrite markdown image source URL to point locally
-      const webRelDir = localRelDir.replace(/\\/g, '/');
-      const newWebUrl = `/articles/assets/${slug}/${webRelDir}/${localFilename}`;
-      const newImageTag = `![${alt}](${newWebUrl})`;
       
       updatedContent = updatedContent.replace(fullMatch, newImageTag);
       console.log(`    - Rewrote image tag: ${href} -> ${newWebUrl}`);
