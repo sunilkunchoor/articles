@@ -391,7 +391,7 @@ export default async function ArticlePage({ params }: PageProps) {
                         <div key={groupKey} className="space-y-1.5 pt-2">
                           <Link
                             href={groupHref}
-                            className={`text-[10px] uppercase tracking-wider font-bold block px-3 mb-1.5 transition-colors ${isGroupActive
+                            className={`text-xs uppercase tracking-wider font-bold block px-3 mb-1.5 transition-colors ${isGroupActive
                                 ? 'text-primary shadow-[0_0_10px_rgba(125,249,255,0.05)]'
                                 : 'text-slate-500 hover:text-white'
                               }`}
@@ -408,7 +408,7 @@ export default async function ArticlePage({ params }: PageProps) {
                                 <Link
                                   key={childSlugPath}
                                   href={childHref}
-                                  className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-[13px] font-medium transition-all ${isChildActive
+                                  className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${isChildActive
                                       ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]'
                                       : 'text-slate-400 hover:text-white hover:bg-white/5 border border-transparent'
                                     }`}
@@ -444,7 +444,7 @@ export default async function ArticlePage({ params }: PageProps) {
                             {hasGroupFile ? (
                               <Link
                                 href={groupHref}
-                                className={`text-[10px] uppercase tracking-wider font-bold block px-3 mb-1.5 transition-colors ${isGroupActive
+                                className={`text-xs uppercase tracking-wider font-bold block px-3 mb-1.5 transition-colors ${isGroupActive
                                     ? 'text-primary shadow-[0_0_10px_rgba(125,249,255,0.05)]'
                                     : 'text-slate-500 hover:text-white'
                                   }`}
@@ -452,7 +452,7 @@ export default async function ArticlePage({ params }: PageProps) {
                                 {groupTitle}
                               </Link>
                             ) : (
-                              <span className="text-[10px] uppercase tracking-wider text-slate-500 font-bold block px-3 mb-1">
+                              <span className="text-xs uppercase tracking-wider text-slate-500 font-bold block px-3 mb-1">
                                 {groupTitle}
                               </span>
                             )}
@@ -466,7 +466,7 @@ export default async function ArticlePage({ params }: PageProps) {
                                   <Link
                                     key={childSlugPath}
                                     href={childHref}
-                                    className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-[13px] font-medium transition-all ${isChildActive
+                                    className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${isChildActive
                                         ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]'
                                         : 'text-slate-400 hover:text-white hover:bg-white/5 border border-transparent'
                                       }`}
@@ -587,11 +587,6 @@ export default async function ArticlePage({ params }: PageProps) {
                     <Clock className="w-4 h-4" />
                     {readingTime} min read
                   </span>
-                  {data.author && (
-                    <span className="text-slate-400">
-                      By {data.author}
-                    </span>
-                  )}
                 </div>
 
                 {/* Tags */}
