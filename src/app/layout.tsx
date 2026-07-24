@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,8 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Articles | Sunil Kunchoor Basavaraju",
+  title: "Folio | Sunil Kunchoor Basavaraju",
   description: "Articles by Sunil Kunchoor Basavaraju",
+  applicationName: "Folio",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Folio",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
 };
 
 export default function RootLayout({
