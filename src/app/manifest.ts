@@ -1,10 +1,12 @@
 import { MetadataRoute } from 'next'
- 
+
+export const dynamic = 'force-static'
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Folio',
     short_name: 'Folio',
-    description: 'Articles by Sunil Kunchoor Basavaraju',
+    description: 'A curated collection of technical articles, deep dives, project documentation, and learning resources. By Sunil Kunchoor Basavaraju',
     start_url: '/articles/',
     display: 'standalone',
     background_color: '#ffffff',
