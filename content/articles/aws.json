@@ -16,6 +16,53 @@
   "mainPath": "docs/README.md",
   "subPages": [
     {
+      "title": "Foundations",
+      "path": "docs/foundations/README.md",
+      "slug": [
+        "foundations"
+      ]
+    },
+    {
+      "title": "Accounts and Organizations",
+      "path": "docs/foundations/01-accounts-and-organizations.md",
+      "slug": [
+        "foundations",
+        "01-accounts-and-organizations"
+      ]
+    },
+    {
+      "title": "APIs and the Control Plane",
+      "path": "docs/foundations/02-apis-and-the-control-plane.md",
+      "slug": [
+        "foundations",
+        "02-apis-and-the-control-plane"
+      ]
+    },
+    {
+      "title": "IAM and Identity",
+      "path": "docs/foundations/03-iam-and-identity.md",
+      "slug": [
+        "foundations",
+        "03-iam-and-identity"
+      ]
+    },
+    {
+      "title": "Regions and Availability",
+      "path": "docs/foundations/04-regions-and-availability.md",
+      "slug": [
+        "foundations",
+        "04-regions-and-availability"
+      ]
+    },
+    {
+      "title": "ARNs, Tagging, and Quotas",
+      "path": "docs/foundations/05-arns-tagging-and-quotas.md",
+      "slug": [
+        "foundations",
+        "05-arns-tagging-and-quotas"
+      ]
+    },
+    {
       "title": "EC2",
       "path": "docs/ec2/README.md",
       "slug": [
