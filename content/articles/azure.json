@@ -1,0 +1,65 @@
+{
+  "type": "remote",
+  "slug": "azure",
+  "owner": "sunilkunchoor",
+  "repo": "azure",
+  "branch": "main",
+  "title": "Microsoft Azure",
+  "date": "2026-07-25",
+  "summary": "Microsoft Azure guides and documentation.",
+  "tags": [
+    "Azure",
+    "Cloud"
+  ],
+  "author": "Sunil Kunchoor",
+  "mainPath": "docs/README.md",
+  "subPages": [
+    {
+      "title": "Foundations",
+      "path": "docs/foundations/README.md",
+      "slug": [
+        "foundations"
+      ]
+    },
+    {
+      "title": "1. Resource Hierarchy",
+      "path": "docs/foundations/01-resource-hierarchy.md",
+      "slug": [
+        "foundations",
+        "01-resource-hierarchy"
+      ]
+    },
+    {
+      "title": "2. Resource Manager",
+      "path": "docs/foundations/02-resource-manager.md",
+      "slug": [
+        "foundations",
+        "02-resource-manager"
+      ]
+    },
+    {
+      "title": "3. Identity and RBAC",
+      "path": "docs/foundations/03-identity-and-rbac.md",
+      "slug": [
+        "foundations",
+        "03-identity-and-rbac"
+      ]
+    },
+    {
+      "title": "4. Regions and Availability",
+      "path": "docs/foundations/04-regions-and-availability.md",
+      "slug": [
+        "foundations",
+        "04-regions-and-availability"
+      ]
+    },
+    {
+      "title": "5. Naming and Tagging",
+      "path": "docs/foundations/05-naming-and-tagging.md",
+      "slug": [
+        "foundations",
+        "05-naming-and-tagging"
+      ]
+    }
+  ]
+}
