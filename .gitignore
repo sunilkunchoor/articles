@@ -60,9 +60,17 @@ content/articles/apache-spark.md
 content/articles/apache-spark/
 content/articles/system-design/
 content/articles/system-design.md
+content/articles/aws/
+content/articles/aws/aws.md
+content/articles/azure/
+content/articles/azure/aws.md
+
+
 
 # Dynamically downloaded article images
 public/assets/system-design/
 public/assets/ai-system-architecture/
 public/assets/apache-spark/
 public/assets/c4-model/
+public/assets/aws/
+public/assets/azure/
