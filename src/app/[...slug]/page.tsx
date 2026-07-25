@@ -381,7 +381,7 @@ export default async function ArticlePage({ params }: PageProps) {
                       renderedGroups.add(groupKey);
 
                       const groupHref = `/${mainSlug}/${groupKey}`;
-                      const isGroupActive = isSubPage && slug.slice(1).join('/') === groupKey;
+                      const isGroupActive = isSubPage && slug.slice(1)[0] === groupKey;
                       const children = getGroupChildren(groupKey);
 
                       children.forEach((child: any) => {
@@ -432,7 +432,7 @@ export default async function ArticlePage({ params }: PageProps) {
                         const groupHref = `/${mainSlug}/${groupKey}`;
                         const groupFilePath = path.join(process.cwd(), 'content/articles', mainSlug, `${groupKey}.md`);
                         const hasGroupFile = fs.existsSync(groupFilePath);
-                        const isGroupActive = isSubPage && slug.slice(1).join('/') === groupKey;
+                        const isGroupActive = isSubPage && slug.slice(1)[0] === groupKey;
                         const groupTitle = formatGroupName(groupKey);
 
                         return (
