@@ -1,0 +1,98 @@
+{
+  "type": "remote",
+  "slug": "aws",
+  "owner": "sunilkunchoor",
+  "repo": "aws",
+  "branch": "main",
+  "title": "Amazon Web Services",
+  "date": "2026-07-25",
+  "summary": "Amazon Web Services (AWS) guides and documentation.",
+  "tags": [
+    "AWS",
+    "Cloud",
+    "EC2"
+  ],
+  "author": "Sunil Kunchoor",
+  "mainPath": "docs/README.md",
+  "subPages": [
+    {
+      "title": "EC2 Overview",
+      "path": "docs/ec2/README.md",
+      "slug": [
+        "ec2"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/ec2/01-what-and-why.md",
+      "slug": [
+        "ec2",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/ec2/02-core-concepts.md",
+      "slug": [
+        "ec2",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/ec2/03-architecture.md",
+      "slug": [
+        "ec2",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/ec2/04-getting-started.md",
+      "slug": [
+        "ec2",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/ec2/05-deployment.md",
+      "slug": [
+        "ec2",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/ec2/06-integrations.md",
+      "slug": [
+        "ec2",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/ec2/07-production.md",
+      "slug": [
+        "ec2",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/ec2/08-interview-questions.md",
+      "slug": [
+        "ec2",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/ec2/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "ec2",
+        "09-glossary-and-cheatsheet"
+      ]
+    }
+  ]
+}
