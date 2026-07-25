@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Background from '@/components/Background';
 import Mermaid from '@/components/Mermaid';
+import SidebarGroup from '@/components/SidebarGroup';
 import { Calendar, ArrowLeft, Clock, BookOpen, ChevronRight } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
@@ -388,38 +389,33 @@ export default async function ArticlePage({ params }: PageProps) {
                       });
 
                       return (
-                        <div key={groupKey} className="space-y-1.5 pt-2">
-                          <Link
-                            href={groupHref}
-                            className={`text-xs uppercase tracking-wider font-bold block px-3 mb-1.5 transition-colors ${isGroupActive
-                                ? 'text-primary shadow-[0_0_10px_rgba(125,249,255,0.05)]'
-                                : 'text-slate-500 hover:text-white'
-                              }`}
-                          >
-                            {sub.title}
-                          </Link>
-                          <div className="space-y-1">
-                            {children.map((child: any) => {
-                              const childSlugPath = child.slug.join('/');
-                              const childHref = `/${mainSlug}/${childSlugPath}`;
-                              const isChildActive = isSubPage && slug.slice(1).join('/') === childSlugPath;
+                        <SidebarGroup
+                          key={groupKey}
+                          title={sub.title}
+                          href={groupHref}
+                          hasHref={true}
+                          isActive={isGroupActive}
+                        >
+                          {children.map((child: any) => {
+                            const childSlugPath = child.slug.join('/');
+                            const childHref = `/${mainSlug}/${childSlugPath}`;
+                            const isChildActive = isSubPage && slug.slice(1).join('/') === childSlugPath;
 
-                              return (
-                                <Link
-                                  key={childSlugPath}
-                                  href={childHref}
-                                  className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${isChildActive
-                                      ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]'
-                                      : 'text-slate-400 hover:text-white hover:bg-white/5 border border-transparent'
-                                    }`}
-                                >
-                                  <ChevronRight className="w-3 h-3 flex-shrink-0 text-slate-600" />
-                                  <span className="line-clamp-1">{child.title}</span>
-                                </Link>
-                              );
-                            })}
-                          </div>
-                        </div>
+                            return (
+                              <Link
+                                key={childSlugPath}
+                                href={childHref}
+                                className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${isChildActive
+                                    ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]'
+                                    : 'text-slate-400 hover:text-white hover:bg-white/5 border border-transparent'
+                                  }`}
+                              >
+                                <ChevronRight className="w-3 h-3 flex-shrink-0 text-slate-600" />
+                                <span className="line-clamp-1">{child.title}</span>
+                              </Link>
+                            );
+                          })}
+                        </SidebarGroup>
                       );
                     }
 
@@ -440,44 +436,33 @@ export default async function ArticlePage({ params }: PageProps) {
                         const groupTitle = formatGroupName(groupKey);
 
                         return (
-                          <div key={groupKey} className="space-y-1.5 pt-2">
-                            {hasGroupFile ? (
-                              <Link
-                                href={groupHref}
-                                className={`text-xs uppercase tracking-wider font-bold block px-3 mb-1.5 transition-colors ${isGroupActive
-                                    ? 'text-primary shadow-[0_0_10px_rgba(125,249,255,0.05)]'
-                                    : 'text-slate-500 hover:text-white'
-                                  }`}
-                              >
-                                {groupTitle}
-                              </Link>
-                            ) : (
-                              <span className="text-xs uppercase tracking-wider text-slate-500 font-bold block px-3 mb-1">
-                                {groupTitle}
-                              </span>
-                            )}
-                            <div className="space-y-1">
-                              {children.map((child: any) => {
-                                const childSlugPath = child.slug.join('/');
-                                const childHref = `/${mainSlug}/${childSlugPath}`;
-                                const isChildActive = isSubPage && slug.slice(1).join('/') === childSlugPath;
+                          <SidebarGroup
+                            key={groupKey}
+                            title={groupTitle}
+                            href={groupHref}
+                            hasHref={hasGroupFile}
+                            isActive={isGroupActive}
+                          >
+                            {children.map((child: any) => {
+                              const childSlugPath = child.slug.join('/');
+                              const childHref = `/${mainSlug}/${childSlugPath}`;
+                              const isChildActive = isSubPage && slug.slice(1).join('/') === childSlugPath;
 
-                                return (
-                                  <Link
-                                    key={childSlugPath}
-                                    href={childHref}
-                                    className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${isChildActive
-                                        ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]'
-                                        : 'text-slate-400 hover:text-white hover:bg-white/5 border border-transparent'
-                                      }`}
-                                  >
-                                    <ChevronRight className="w-3 h-3 flex-shrink-0 text-slate-600" />
-                                    <span className="line-clamp-1">{child.title}</span>
-                                  </Link>
-                                );
-                              })}
-                            </div>
-                          </div>
+                              return (
+                                <Link
+                                  key={childSlugPath}
+                                  href={childHref}
+                                  className={`flex items-center space-x-2 px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${isChildActive
+                                      ? 'bg-primary/10 text-primary border border-primary/20 shadow-[0_0_15px_rgba(125,249,255,0.05)]'
+                                      : 'text-slate-400 hover:text-white hover:bg-white/5 border border-transparent'
+                                    }`}
+                                >
+                                  <ChevronRight className="w-3 h-3 flex-shrink-0 text-slate-600" />
+                                  <span className="line-clamp-1">{child.title}</span>
+                                </Link>
+                              );
+                            })}
+                          </SidebarGroup>
                         );
                       }
                       return null;

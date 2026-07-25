@@ -5,7 +5,7 @@
   "repo": "aws",
   "branch": "main",
   "title": "Amazon Web Services",
-  "date": "2026-07-25",
+  "date": "2026-04-10",
   "summary": "Amazon Web Services (AWS) guides and documentation.",
   "tags": [
     "AWS",
@@ -16,7 +16,7 @@
   "mainPath": "docs/README.md",
   "subPages": [
     {
-      "title": "EC2 Overview",
+      "title": "EC2",
       "path": "docs/ec2/README.md",
       "slug": [
         "ec2"
