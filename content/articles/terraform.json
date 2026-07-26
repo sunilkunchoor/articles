@@ -49,14 +49,6 @@
       ]
     },
     {
-      "title": "Image Generation Prompts",
-      "path": "docs/00-orientation/image-generation-prompts.md",
-      "slug": [
-        "00-orientation",
-        "image-generation-prompts"
-      ]
-    },
-    {
       "title": "01 Language",
       "path": "docs/01-language/README.md",
       "slug": [
@@ -104,14 +96,6 @@
       ]
     },
     {
-      "title": "Image Generation Prompts",
-      "path": "docs/01-language/image-generation-prompts.md",
-      "slug": [
-        "01-language",
-        "image-generation-prompts"
-      ]
-    },
-    {
       "title": "02 Machinery",
       "path": "docs/02-machinery/README.md",
       "slug": [
@@ -140,14 +124,6 @@
       "slug": [
         "02-machinery",
         "03-meta-arguments"
-      ]
-    },
-    {
-      "title": "Image Generation Prompts",
-      "path": "docs/02-machinery/image-generation-prompts.md",
-      "slug": [
-        "02-machinery",
-        "image-generation-prompts"
       ]
     }
   ]
