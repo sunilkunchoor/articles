@@ -5,7 +5,7 @@ import { ShieldCheck, Cloud, Zap, Database } from 'lucide-react';
 
 export default function About() {
   const stats = [
-    { label: 'Total Experience', value: '10+ Years', icon: Database },
+    { label: 'Total Experience', value: '12+ Years', icon: Database },
     { label: 'MLOps Specialization', value: '3.5+ Years', icon: Zap },
     { label: 'Cloud Focus', value: 'Azure & Databricks', icon: Cloud },
     { label: 'Reliability', value: 'Self-healing Systems', icon: ShieldCheck },
@@ -54,7 +54,7 @@ export default function About() {
                 My approach focuses on creating automated governance and robust monitoring systems that empower Data Scientists rather than slowing them down. I believe that MLOps isn't just about automation—it's about building trust in AI.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-6 mt-12">
               {stats.map((stat, i) => (
                 <div key={i} className="glass-card p-6 rounded-xl hover:bg-white/10 transition-colors">
@@ -65,12 +65,12 @@ export default function About() {
               ))}
             </div>
           </div>
-          
+
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
             <div className="relative glass-card aspect-square rounded-2xl overflow-hidden flex items-center justify-center p-12">
               <div className="relative w-full h-full border border-white/10 rounded-xl flex flex-col items-center justify-between text-center bg-slate-900/40 p-10">
-                
+
                 {/* Active Slide Content */}
                 <div className="flex-1 flex flex-col items-center justify-center space-y-6">
                   {/* Icon */}
@@ -80,7 +80,7 @@ export default function About() {
                       return <IconComponent className="w-12 h-12 text-primary" />;
                     })()}
                   </div>
-                  
+
                   {/* Text */}
                   <div key={`text-${activeSlide}`} className="px-6 space-y-3 animate-in fade-in slide-in-from-bottom-4 duration-500">
                     <div className="text-2xl font-bold text-white">{slides[activeSlide].title}</div>
@@ -96,11 +96,10 @@ export default function About() {
                     <button
                       key={idx}
                       onClick={() => setActiveSlide(idx)}
-                      className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                        activeSlide === idx 
-                          ? 'bg-primary scale-110 shadow-[0_0_8px_rgba(125,249,255,0.8)]' 
-                          : 'bg-slate-700 hover:bg-slate-500'
-                      }`}
+                      className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${activeSlide === idx
+                        ? 'bg-primary scale-110 shadow-[0_0_8px_rgba(125,249,255,0.8)]'
+                        : 'bg-slate-700 hover:bg-slate-500'
+                        }`}
                       aria-label={`Go to slide ${idx + 1}`}
                     />
                   ))}
