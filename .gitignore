@@ -61,10 +61,11 @@ content/articles/apache-spark/
 content/articles/system-design/
 content/articles/system-design.md
 content/articles/aws/
-content/articles/aws/aws.md
+content/articles/aws.md
 content/articles/azure/
-content/articles/azure/aws.md
-
+content/articles/azure.md
+content/articles/terraform/
+content/articles/terraform.md
 
 
 # Dynamically downloaded article images
@@ -74,3 +75,4 @@ public/assets/apache-spark/
 public/assets/c4-model/
 public/assets/aws/
 public/assets/azure/
+public/assets/terraform/

@@ -10,6 +10,7 @@ import Mermaid from '@/components/Mermaid';
 import SidebarGroup from '@/components/SidebarGroup';
 import { Calendar, ArrowLeft, Clock, BookOpen, ChevronRight } from 'lucide-react';
 import { notFound } from 'next/navigation';
+import TabsController from '@/components/TabsController';
 
 import Prism from 'prismjs';
 import 'prismjs/components/prism-python';
@@ -285,7 +286,32 @@ export default async function ArticlePage({ params }: PageProps) {
     return `<pre class="language-${lang}"><code class="language-${lang}">${highlightedCode}</code></pre>\n`;
   };
 
-  const htmlContent = await marked.parse(content, { renderer });
+  let preprocessedContent = content;
+  let tabGroupCounter = 0;
+  preprocessedContent = preprocessedContent.replace(/<Tabs items=\{\[(.*?)\]\}>/g, (match, items) => {
+    tabGroupCounter++;
+    const cleanItems = items.replace(/['"\s]/g, '');
+    return `\n\n[[TABS-${tabGroupCounter}-${cleanItems}]]\n\n`;
+  });
+  preprocessedContent = preprocessedContent.replace(/<Tab value="(.*?)">/g, '\n\n[[TAB-$1]]\n\n');
+  preprocessedContent = preprocessedContent.replace(/<\/Tab>/g, '\n\n[[ENDTAB]]\n\n');
+  preprocessedContent = preprocessedContent.replace(/<\/Tabs>/g, '\n\n[[ENDTABS]]\n\n');
+
+  let htmlContent = await marked.parse(preprocessedContent, { renderer });
+
+  htmlContent = htmlContent.replace(/(?:<p>)?\[\[TABS-(\d+)-(.*?)\]\](?:<\/p>)?/g, (match, group, items) => {
+    const tabs = items.split(',').map((s: string) => s.trim());
+    let buttons = tabs.map((t: string, i: number) => 
+      `<button type="button" class="tab-btn px-4 py-2 text-sm font-semibold border-b-2 ${i === 0 ? 'border-primary text-primary' : 'border-transparent text-slate-400 hover:text-white'} transition-colors" data-group="${group}" data-value="${t}" onclick="window.switchTab && window.switchTab(this)">${t}</button>`
+    ).join('');
+    return `<div class="tabs-container my-6 border border-white/10 rounded-xl overflow-hidden bg-white/5" data-group="${group}"><div class="tabs-header flex border-b border-white/10 bg-black/20">${buttons}</div><div class="tabs-content p-4">`;
+  });
+
+  htmlContent = htmlContent.replace(/(?:<p>)?\[\[TAB-(.*?)\]\](?:<\/p>)?/g, (match, val) => {
+    return `<div class="tab-pane" data-value="${val}">`;
+  });
+  htmlContent = htmlContent.replace(/(?:<p>)?\[\[ENDTAB\]\](?:<\/p>)?/g, '</div>');
+  htmlContent = htmlContent.replace(/(?:<p>)?\[\[ENDTABS\]\](?:<\/p>)?/g, '</div></div>');
 
   const hasSidebar = subPages.length > 0;
 
@@ -600,6 +626,7 @@ export default async function ArticlePage({ params }: PageProps) {
       </div>
 
       <Footer />
+      <TabsController />
     </main>
   );
 }

@@ -1,0 +1,60 @@
+{
+  "type": "remote",
+  "slug": "terraform",
+  "owner": "sunilkunchoor",
+  "repo": "terraform",
+  "branch": "main",
+  "title": "Terraform Guide",
+  "date": "2026-03-10",
+  "summary": "A comprehensive guide on Terraform and Infrastructure as Code workflows.",
+  "tags": [
+    "Terraform",
+    "IaC",
+    "AWS",
+    "Azure",
+    "GCP"
+  ],
+  "author": "Sunil Kunchoor Basavaraju",
+  "mainPath": "docs/README.md",
+  "subPages": [
+    {
+      "title": "00 Orientation",
+      "path": "docs/00-orientation/README.md",
+      "slug": [
+        "00-orientation"
+      ]
+    },
+    {
+      "title": "Why IaC Exists",
+      "path": "docs/00-orientation/01-why-iac-exists.md",
+      "slug": [
+        "00-orientation",
+        "01-why-iac-exists"
+      ]
+    },
+    {
+      "title": "Core Workflow",
+      "path": "docs/00-orientation/02-core-workflow.md",
+      "slug": [
+        "00-orientation",
+        "02-core-workflow"
+      ]
+    },
+    {
+      "title": "Anatomy of a Project",
+      "path": "docs/00-orientation/03-anatomy-of-a-project.md",
+      "slug": [
+        "00-orientation",
+        "03-anatomy-of-a-project"
+      ]
+    },
+    {
+      "title": "Image Generation Prompts",
+      "path": "docs/00-orientation/image-generation-prompts.md",
+      "slug": [
+        "00-orientation",
+        "image-generation-prompts"
+      ]
+    }
+  ]
+}
