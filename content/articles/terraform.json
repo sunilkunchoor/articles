@@ -55,6 +55,100 @@
         "00-orientation",
         "image-generation-prompts"
       ]
+    },
+    {
+      "title": "01 Language",
+      "path": "docs/01-language/README.md",
+      "slug": [
+        "01-language"
+      ]
+    },
+    {
+      "title": "HCL and Types",
+      "path": "docs/01-language/01-hcl-and-types.md",
+      "slug": [
+        "01-language",
+        "01-hcl-and-types"
+      ]
+    },
+    {
+      "title": "Providers",
+      "path": "docs/01-language/02-providers.md",
+      "slug": [
+        "01-language",
+        "02-providers"
+      ]
+    },
+    {
+      "title": "Resources and References",
+      "path": "docs/01-language/03-resources-and-references.md",
+      "slug": [
+        "01-language",
+        "03-resources-and-references"
+      ]
+    },
+    {
+      "title": "Variables and Outputs",
+      "path": "docs/01-language/04-variables-and-outputs.md",
+      "slug": [
+        "01-language",
+        "04-variables-and-outputs"
+      ]
+    },
+    {
+      "title": "Expressions and Functions",
+      "path": "docs/01-language/05-expressions-and-functions.md",
+      "slug": [
+        "01-language",
+        "05-expressions-and-functions"
+      ]
+    },
+    {
+      "title": "Image Generation Prompts",
+      "path": "docs/01-language/image-generation-prompts.md",
+      "slug": [
+        "01-language",
+        "image-generation-prompts"
+      ]
+    },
+    {
+      "title": "02 Machinery",
+      "path": "docs/02-machinery/README.md",
+      "slug": [
+        "02-machinery"
+      ]
+    },
+    {
+      "title": "Plan Apply Lifecycle",
+      "path": "docs/02-machinery/01-plan-apply-lifecycle.md",
+      "slug": [
+        "02-machinery",
+        "01-plan-apply-lifecycle"
+      ]
+    },
+    {
+      "title": "Dependency Graph",
+      "path": "docs/02-machinery/02-dependency-graph.md",
+      "slug": [
+        "02-machinery",
+        "02-dependency-graph"
+      ]
+    },
+    {
+      "title": "Meta Arguments",
+      "path": "docs/02-machinery/03-meta-arguments.md",
+      "slug": [
+        "02-machinery",
+        "03-meta-arguments"
+      ]
+    },
+    {
+      "title": "Image Generation Prompts",
+      "path": "docs/02-machinery/image-generation-prompts.md",
+      "slug": [
+        "02-machinery",
+        "image-generation-prompts"
+      ]
     }
   ]
 }
