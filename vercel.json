@@ -10,10 +10,10 @@
     }
   ],
   "rewrites": [
-    { "source": "/api/chat", "destination": "/api/chat.py" }
+    { "source": "/api/(.*)", "destination": "/api/index.py" }
   ],
   "functions": {
-    "api/chat.py": {
+    "api/index.py": {
       "maxDuration": 30
     }
   }

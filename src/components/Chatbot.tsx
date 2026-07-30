@@ -52,11 +52,17 @@ export default function Chatbot() {
 
     try {
       const apiUrl = process.env.NEXT_PUBLIC_CHAT_API_URL || '/api/chat';
+      const headers: HeadersInit = {
+        'Content-Type': 'application/json',
+      };
+      const token = process.env.NEXT_PUBLIC_CHAT_API_TOKEN;
+      if (token) {
+        headers['Authorization'] = `Bearer ${token}`;
+      }
+
       const response = await fetch(apiUrl, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers,
         body: JSON.stringify({
           messages: [...messages, { role: 'user', content: userMessage }]
         }),
