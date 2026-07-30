@@ -53,6 +53,8 @@ jobs:
         run: npm run build
         env:
           GITHUB_PAT: ${{ secrets.ARTICLES_SYNC_TOKEN }}
+          NEXT_PUBLIC_CHAT_API_URL: ${{ secrets.NEXT_PUBLIC_CHAT_API_URL }}
+          NEXT_PUBLIC_CHAT_API_TOKEN: ${{ secrets.NEXT_PUBLIC_CHAT_API_TOKEN }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
