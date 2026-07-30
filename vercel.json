@@ -1,4 +1,14 @@
 {
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "https://sunilkunchoor.github.io" },
+        { "key": "Access-Control-Allow-Methods", "value": "OPTIONS, POST" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+      ]
+    }
+  ],
   "rewrites": [
     { "source": "/api/chat", "destination": "/api/chat.py" }
   ],

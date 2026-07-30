@@ -35,7 +35,6 @@ TEMPERATURE = 0.3
 
 ALLOWED_ORIGINS = [
     "https://sunilkunchoor.github.io",
-    "http://localhost:3000",
 ]
 
 SYSTEM_PROMPT = """You are Skippy, an AI knowledge assistant for Sunil Kunchoor Basavaraju's portfolio and technical articles site. You help readers understand his published articles, and answer questions about his professional background, bio, resume, and experiments.
