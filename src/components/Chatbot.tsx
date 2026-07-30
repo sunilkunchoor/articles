@@ -1,21 +1,35 @@
 "use client";
 
 import { useState, useRef, useEffect } from 'react';
-import { MessageSquare, X, Send, Bot, User, Sparkles } from 'lucide-react';
+import { MessageSquare, X, Send, Bot, User, Sparkles, FileText } from 'lucide-react';
+
+interface Source {
+  title: string;
+  slug: string;
+  url?: string;
+}
 
 interface Message {
   role: 'user' | 'assistant';
   content: string;
+  sources?: Source[];
 }
+
+const STARTER_QUESTIONS = [
+  "What is RAG and how does it work?",
+  "Explain Rust's ownership model",
+  "What are the key system design patterns?",
+];
 
 export default function Chatbot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'assistant',
-      content: "Hi! I'm Skippy, Sunil's AI assistant. Ask me anything about his MLOps experience, projects, or academic background!"
+      content: "Hi! I'm Skippy, your knowledge assistant. Ask me anything about Sunil's technical articles — System Design, AI Architecture, Rust, PyTorch, and more!"
     }
   ]);
+  const hasUserMessages = messages.some((m) => m.role === 'user');
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -60,7 +74,7 @@ export default function Chatbot() {
 
       const data = await response.json();
       if (data.text) {
-        setMessages((prev) => [...prev, { role: 'assistant', content: data.text }]);
+        setMessages((prev) => [...prev, { role: 'assistant', content: data.text, sources: data.sources || [] }]);
       } else {
         setMessages((prev) => [
           ...prev,
@@ -106,7 +120,7 @@ export default function Chatbot() {
                   Skippy - AI Copilot
                   <Sparkles className="w-3.5 h-3.5 text-primary animate-pulse" />
                 </div>
-                <div className="text-[10px] text-slate-400">Powered by Gemini</div>
+                <div className="text-[10px] text-slate-400">Powered by Gemini · RAG</div>
               </div>
             </div>
             <button
@@ -133,6 +147,23 @@ export default function Chatbot() {
                     : 'bg-white/5 text-slate-300 border border-white/5 rounded-tl-none'
                   }`}>
                   {msg.content}
+                  {msg.sources && msg.sources.length > 0 && (
+                    <div className="mt-2 pt-2 border-t border-white/5 space-y-1">
+                      <span className="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Sources</span>
+                      {msg.sources.map((s, si) => (
+                        <a
+                          key={si}
+                          href={s.url || `/articles/${s.slug}`}
+                          target={s.url?.startsWith('http') ? '_blank' : '_self'}
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-1.5 text-[11px] text-primary/70 hover:text-primary transition-colors"
+                        >
+                          <FileText className="w-3 h-3 shrink-0" />
+                          {s.title}
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -146,6 +177,23 @@ export default function Chatbot() {
                   <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce [animation-delay:0.2s]"></span>
                   <span className="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce [animation-delay:0.4s]"></span>
                 </div>
+              </div>
+            )}
+            {/* Suggested starter questions */}
+            {!hasUserMessages && !isLoading && (
+              <div className="space-y-2 mt-2">
+                <span className="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Try asking</span>
+                {STARTER_QUESTIONS.map((q, qi) => (
+                  <button
+                    key={qi}
+                    onClick={() => {
+                      setInput(q);
+                    }}
+                    className="block w-full text-left text-xs px-3 py-2 rounded-lg bg-white/5 border border-white/5 text-slate-400 hover:text-white hover:bg-white/10 hover:border-primary/20 transition-all"
+                  >
+                    {q}
+                  </button>
+                ))}
               </div>
             )}
             <div ref={messagesEndRef} />
