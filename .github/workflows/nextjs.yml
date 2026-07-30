@@ -4,12 +4,6 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
-    inputs:
-      update_embeddings:
-        description: 'Update Upstash Vector Embeddings'
-        required: false
-        type: boolean
-        default: false
 
 permissions:
   contents: read
@@ -54,24 +48,6 @@ jobs:
         run: node scripts/sync-articles.js
         env:
           GITHUB_PAT: ${{ secrets.ARTICLES_SYNC_TOKEN }}
-
-      - name: Setup Python
-        if: ${{ github.event.inputs.update_embeddings == 'true' }}
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install Python dependencies
-        if: ${{ github.event.inputs.update_embeddings == 'true' }}
-        run: pip install google-genai upstash-vector pyyaml python-dotenv
-
-      - name: Build and upload embeddings to Upstash
-        if: ${{ github.event.inputs.update_embeddings == 'true' }}
-        run: python scripts/build-embeddings.py
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          UPSTASH_VECTOR_REST_URL: ${{ secrets.UPSTASH_VECTOR_REST_URL }}
-          UPSTASH_VECTOR_REST_TOKEN: ${{ secrets.UPSTASH_VECTOR_REST_TOKEN }}
 
       - name: Build with Next.js
         run: npm run build
