@@ -60,6 +60,1112 @@
         "foundations",
         "05-naming-and-tagging"
       ]
+    },
+    {
+      "title": "Virtual Machines",
+      "path": "docs/virtual-machines/README.md",
+      "slug": [
+        "virtual-machines"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/virtual-machines/01-what-and-why.md",
+      "slug": [
+        "virtual-machines",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/virtual-machines/02-core-concepts.md",
+      "slug": [
+        "virtual-machines",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/virtual-machines/03-architecture.md",
+      "slug": [
+        "virtual-machines",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/virtual-machines/04-getting-started.md",
+      "slug": [
+        "virtual-machines",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/virtual-machines/05-deployment.md",
+      "slug": [
+        "virtual-machines",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/virtual-machines/06-integrations.md",
+      "slug": [
+        "virtual-machines",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/virtual-machines/07-production.md",
+      "slug": [
+        "virtual-machines",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/virtual-machines/08-interview-questions.md",
+      "slug": [
+        "virtual-machines",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/virtual-machines/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "virtual-machines",
+        "09-glossary-and-cheatsheet"
+      ]
+    },
+    {
+      "title": "Virtual Network",
+      "path": "docs/virtual-network/README.md",
+      "slug": [
+        "virtual-network"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/virtual-network/01-what-and-why.md",
+      "slug": [
+        "virtual-network",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/virtual-network/02-core-concepts.md",
+      "slug": [
+        "virtual-network",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/virtual-network/03-architecture.md",
+      "slug": [
+        "virtual-network",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/virtual-network/04-getting-started.md",
+      "slug": [
+        "virtual-network",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/virtual-network/05-deployment.md",
+      "slug": [
+        "virtual-network",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/virtual-network/06-integrations.md",
+      "slug": [
+        "virtual-network",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/virtual-network/07-production.md",
+      "slug": [
+        "virtual-network",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/virtual-network/08-interview-questions.md",
+      "slug": [
+        "virtual-network",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/virtual-network/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "virtual-network",
+        "09-glossary-and-cheatsheet"
+      ]
+    },
+    {
+      "title": "Blob Storage",
+      "path": "docs/blob-storage/README.md",
+      "slug": [
+        "blob-storage"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/blob-storage/01-what-and-why.md",
+      "slug": [
+        "blob-storage",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/blob-storage/02-core-concepts.md",
+      "slug": [
+        "blob-storage",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/blob-storage/03-architecture.md",
+      "slug": [
+        "blob-storage",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/blob-storage/04-getting-started.md",
+      "slug": [
+        "blob-storage",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/blob-storage/05-deployment.md",
+      "slug": [
+        "blob-storage",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/blob-storage/06-integrations.md",
+      "slug": [
+        "blob-storage",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/blob-storage/07-production.md",
+      "slug": [
+        "blob-storage",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/blob-storage/08-interview-questions.md",
+      "slug": [
+        "blob-storage",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/blob-storage/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "blob-storage",
+        "09-glossary-and-cheatsheet"
+      ]
+    },
+    {
+      "title": "Azure SQL Database",
+      "path": "docs/azure-sql-database/README.md",
+      "slug": [
+        "azure-sql-database"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/azure-sql-database/01-what-and-why.md",
+      "slug": [
+        "azure-sql-database",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/azure-sql-database/02-core-concepts.md",
+      "slug": [
+        "azure-sql-database",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/azure-sql-database/03-architecture.md",
+      "slug": [
+        "azure-sql-database",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/azure-sql-database/04-getting-started.md",
+      "slug": [
+        "azure-sql-database",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/azure-sql-database/05-deployment.md",
+      "slug": [
+        "azure-sql-database",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/azure-sql-database/06-integrations.md",
+      "slug": [
+        "azure-sql-database",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/azure-sql-database/07-production.md",
+      "slug": [
+        "azure-sql-database",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/azure-sql-database/08-interview-questions.md",
+      "slug": [
+        "azure-sql-database",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/azure-sql-database/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "azure-sql-database",
+        "09-glossary-and-cheatsheet"
+      ]
+    },
+    {
+      "title": "Azure Kubernetes Service",
+      "path": "docs/azure-kubernetes-service/README.md",
+      "slug": [
+        "azure-kubernetes-service"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/azure-kubernetes-service/01-what-and-why.md",
+      "slug": [
+        "azure-kubernetes-service",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/azure-kubernetes-service/02-core-concepts.md",
+      "slug": [
+        "azure-kubernetes-service",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/azure-kubernetes-service/03-architecture.md",
+      "slug": [
+        "azure-kubernetes-service",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/azure-kubernetes-service/04-getting-started.md",
+      "slug": [
+        "azure-kubernetes-service",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/azure-kubernetes-service/05-deployment.md",
+      "slug": [
+        "azure-kubernetes-service",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/azure-kubernetes-service/06-integrations.md",
+      "slug": [
+        "azure-kubernetes-service",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/azure-kubernetes-service/07-production.md",
+      "slug": [
+        "azure-kubernetes-service",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/azure-kubernetes-service/08-interview-questions.md",
+      "slug": [
+        "azure-kubernetes-service",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/azure-kubernetes-service/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "azure-kubernetes-service",
+        "09-glossary-and-cheatsheet"
+      ]
+    },
+    {
+      "title": "Azure Container Registry",
+      "path": "docs/azure-container-registry/README.md",
+      "slug": [
+        "azure-container-registry"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/azure-container-registry/01-what-and-why.md",
+      "slug": [
+        "azure-container-registry",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/azure-container-registry/02-core-concepts.md",
+      "slug": [
+        "azure-container-registry",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/azure-container-registry/03-architecture.md",
+      "slug": [
+        "azure-container-registry",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/azure-container-registry/04-getting-started.md",
+      "slug": [
+        "azure-container-registry",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/azure-container-registry/05-deployment.md",
+      "slug": [
+        "azure-container-registry",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/azure-container-registry/06-integrations.md",
+      "slug": [
+        "azure-container-registry",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/azure-container-registry/07-production.md",
+      "slug": [
+        "azure-container-registry",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/azure-container-registry/08-interview-questions.md",
+      "slug": [
+        "azure-container-registry",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/azure-container-registry/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "azure-container-registry",
+        "09-glossary-and-cheatsheet"
+      ]
+    },
+    {
+      "title": "Microsoft Entra ID",
+      "path": "docs/entra-id/README.md",
+      "slug": [
+        "entra-id"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/entra-id/01-what-and-why.md",
+      "slug": [
+        "entra-id",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/entra-id/02-core-concepts.md",
+      "slug": [
+        "entra-id",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/entra-id/03-architecture.md",
+      "slug": [
+        "entra-id",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/entra-id/04-getting-started.md",
+      "slug": [
+        "entra-id",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/entra-id/05-deployment.md",
+      "slug": [
+        "entra-id",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/entra-id/06-integrations.md",
+      "slug": [
+        "entra-id",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/entra-id/07-production.md",
+      "slug": [
+        "entra-id",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/entra-id/08-interview-questions.md",
+      "slug": [
+        "entra-id",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/entra-id/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "entra-id",
+        "09-glossary-and-cheatsheet"
+      ]
+    },
+    {
+      "title": "Azure RBAC",
+      "path": "docs/azure-rbac/README.md",
+      "slug": [
+        "azure-rbac"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/azure-rbac/01-what-and-why.md",
+      "slug": [
+        "azure-rbac",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/azure-rbac/02-core-concepts.md",
+      "slug": [
+        "azure-rbac",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/azure-rbac/03-architecture.md",
+      "slug": [
+        "azure-rbac",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/azure-rbac/04-getting-started.md",
+      "slug": [
+        "azure-rbac",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/azure-rbac/05-deployment.md",
+      "slug": [
+        "azure-rbac",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/azure-rbac/06-integrations.md",
+      "slug": [
+        "azure-rbac",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/azure-rbac/07-production.md",
+      "slug": [
+        "azure-rbac",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/azure-rbac/08-interview-questions.md",
+      "slug": [
+        "azure-rbac",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/azure-rbac/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "azure-rbac",
+        "09-glossary-and-cheatsheet"
+      ]
+    },
+    {
+      "title": "Azure Functions",
+      "path": "docs/azure-functions/README.md",
+      "slug": [
+        "azure-functions"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/azure-functions/01-what-and-why.md",
+      "slug": [
+        "azure-functions",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/azure-functions/02-core-concepts.md",
+      "slug": [
+        "azure-functions",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/azure-functions/03-architecture.md",
+      "slug": [
+        "azure-functions",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/azure-functions/04-getting-started.md",
+      "slug": [
+        "azure-functions",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/azure-functions/05-deployment.md",
+      "slug": [
+        "azure-functions",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/azure-functions/06-integrations.md",
+      "slug": [
+        "azure-functions",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/azure-functions/07-production.md",
+      "slug": [
+        "azure-functions",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/azure-functions/08-interview-questions.md",
+      "slug": [
+        "azure-functions",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/azure-functions/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "azure-functions",
+        "09-glossary-and-cheatsheet"
+      ]
+    },
+    {
+      "title": "API Management",
+      "path": "docs/api-management/README.md",
+      "slug": [
+        "api-management"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/api-management/01-what-and-why.md",
+      "slug": [
+        "api-management",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/api-management/02-core-concepts.md",
+      "slug": [
+        "api-management",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/api-management/03-architecture.md",
+      "slug": [
+        "api-management",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/api-management/04-getting-started.md",
+      "slug": [
+        "api-management",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/api-management/05-deployment.md",
+      "slug": [
+        "api-management",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/api-management/06-integrations.md",
+      "slug": [
+        "api-management",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/api-management/07-production.md",
+      "slug": [
+        "api-management",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/api-management/08-interview-questions.md",
+      "slug": [
+        "api-management",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/api-management/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "api-management",
+        "09-glossary-and-cheatsheet"
+      ]
+    },
+    {
+      "title": "Azure App Configuration",
+      "path": "docs/azure-app-configuration/README.md",
+      "slug": [
+        "azure-app-configuration"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/azure-app-configuration/01-what-and-why.md",
+      "slug": [
+        "azure-app-configuration",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/azure-app-configuration/02-core-concepts.md",
+      "slug": [
+        "azure-app-configuration",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/azure-app-configuration/03-architecture.md",
+      "slug": [
+        "azure-app-configuration",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/azure-app-configuration/04-getting-started.md",
+      "slug": [
+        "azure-app-configuration",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/azure-app-configuration/05-deployment.md",
+      "slug": [
+        "azure-app-configuration",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/azure-app-configuration/06-integrations.md",
+      "slug": [
+        "azure-app-configuration",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/azure-app-configuration/07-production.md",
+      "slug": [
+        "azure-app-configuration",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/azure-app-configuration/08-interview-questions.md",
+      "slug": [
+        "azure-app-configuration",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/azure-app-configuration/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "azure-app-configuration",
+        "09-glossary-and-cheatsheet"
+      ]
+    },
+    {
+      "title": "Azure Machine Learning",
+      "path": "docs/azure-machine-learning/README.md",
+      "slug": [
+        "azure-machine-learning"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/azure-machine-learning/01-what-and-why.md",
+      "slug": [
+        "azure-machine-learning",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/azure-machine-learning/02-core-concepts.md",
+      "slug": [
+        "azure-machine-learning",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/azure-machine-learning/03-architecture.md",
+      "slug": [
+        "azure-machine-learning",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/azure-machine-learning/04-getting-started.md",
+      "slug": [
+        "azure-machine-learning",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/azure-machine-learning/05-deployment.md",
+      "slug": [
+        "azure-machine-learning",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/azure-machine-learning/06-integrations.md",
+      "slug": [
+        "azure-machine-learning",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/azure-machine-learning/07-production.md",
+      "slug": [
+        "azure-machine-learning",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/azure-machine-learning/08-interview-questions.md",
+      "slug": [
+        "azure-machine-learning",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/azure-machine-learning/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "azure-machine-learning",
+        "09-glossary-and-cheatsheet"
+      ]
+    },
+    {
+      "title": "Azure Monitor",
+      "path": "docs/azure-monitor/README.md",
+      "slug": [
+        "azure-monitor"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/azure-monitor/01-what-and-why.md",
+      "slug": [
+        "azure-monitor",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/azure-monitor/02-core-concepts.md",
+      "slug": [
+        "azure-monitor",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/azure-monitor/03-architecture.md",
+      "slug": [
+        "azure-monitor",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/azure-monitor/04-getting-started.md",
+      "slug": [
+        "azure-monitor",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/azure-monitor/05-deployment.md",
+      "slug": [
+        "azure-monitor",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/azure-monitor/06-integrations.md",
+      "slug": [
+        "azure-monitor",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/azure-monitor/07-production.md",
+      "slug": [
+        "azure-monitor",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/azure-monitor/08-interview-questions.md",
+      "slug": [
+        "azure-monitor",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/azure-monitor/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "azure-monitor",
+        "09-glossary-and-cheatsheet"
+      ]
+    },
+    {
+      "title": "Azure AI Foundry",
+      "path": "docs/azure-ai-foundry/README.md",
+      "slug": [
+        "azure-ai-foundry"
+      ]
+    },
+    {
+      "title": "1. What and Why",
+      "path": "docs/azure-ai-foundry/01-what-and-why.md",
+      "slug": [
+        "azure-ai-foundry",
+        "01-what-and-why"
+      ]
+    },
+    {
+      "title": "2. Core Concepts",
+      "path": "docs/azure-ai-foundry/02-core-concepts.md",
+      "slug": [
+        "azure-ai-foundry",
+        "02-core-concepts"
+      ]
+    },
+    {
+      "title": "3. Architecture",
+      "path": "docs/azure-ai-foundry/03-architecture.md",
+      "slug": [
+        "azure-ai-foundry",
+        "03-architecture"
+      ]
+    },
+    {
+      "title": "4. Getting Started",
+      "path": "docs/azure-ai-foundry/04-getting-started.md",
+      "slug": [
+        "azure-ai-foundry",
+        "04-getting-started"
+      ]
+    },
+    {
+      "title": "5. Deployment",
+      "path": "docs/azure-ai-foundry/05-deployment.md",
+      "slug": [
+        "azure-ai-foundry",
+        "05-deployment"
+      ]
+    },
+    {
+      "title": "6. Integrations",
+      "path": "docs/azure-ai-foundry/06-integrations.md",
+      "slug": [
+        "azure-ai-foundry",
+        "06-integrations"
+      ]
+    },
+    {
+      "title": "7. Production",
+      "path": "docs/azure-ai-foundry/07-production.md",
+      "slug": [
+        "azure-ai-foundry",
+        "07-production"
+      ]
+    },
+    {
+      "title": "8. Interview Questions",
+      "path": "docs/azure-ai-foundry/08-interview-questions.md",
+      "slug": [
+        "azure-ai-foundry",
+        "08-interview-questions"
+      ]
+    },
+    {
+      "title": "9. Glossary and Cheatsheet",
+      "path": "docs/azure-ai-foundry/09-glossary-and-cheatsheet.md",
+      "slug": [
+        "azure-ai-foundry",
+        "09-glossary-and-cheatsheet"
+      ]
     }
   ]
 }
